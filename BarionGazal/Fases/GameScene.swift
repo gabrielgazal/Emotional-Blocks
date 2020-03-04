@@ -22,9 +22,11 @@ class GameScene: SKScene {
         
         self.children.forEach{ node in
             if node.contains(pos){
-                if node.name == "red" || node.name == "blue"{
+                if node.name == "red" {
                     node.removeFromParent()
 
+                }else if node.name == "blue"{
+                    node.removeFromParent()
                 }
             }
             
@@ -61,5 +63,6 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        
     }
 }

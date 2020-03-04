@@ -103,14 +103,11 @@
 		568FB064240EDCE60051C89B /* BarionGazal */ = {
 			isa = PBXGroup;
 			children = (
-				568FB065240EDCE60051C89B /* AppDelegate.swift */,
-				568FB067240EDCE60051C89B /* GameScene.sks */,
+				568FB09B241029060051C89B /* Controller */,
+				568FB09A241028F90051C89B /* Fases */,
 				568FB069240EDCE60051C89B /* Actions.sks */,
-				568FB06B240EDCE60051C89B /* GameScene.swift */,
-				568FB06D240EDCE60051C89B /* GameViewController.swift */,
-				568FB06F240EDCE60051C89B /* Main.storyboard */,
+				568FB09C241029150051C89B /* View */,
 				568FB072240EDCEB0051C89B /* Assets.xcassets */,
-				568FB074240EDCEB0051C89B /* LaunchScreen.storyboard */,
 				568FB077240EDCEB0051C89B /* Info.plist */,
 			);
 			path = BarionGazal;
@@ -132,6 +129,33 @@
 				568FB08D240EDCEB0051C89B /* Info.plist */,
 			);
 			path = BarionGazalUITests;
+			sourceTree = "<group>";
+		};
+		568FB09A241028F90051C89B /* Fases */ = {
+			isa = PBXGroup;
+			children = (
+				568FB06B240EDCE60051C89B /* GameScene.swift */,
+				568FB067240EDCE60051C89B /* GameScene.sks */,
+			);
+			path = Fases;
+			sourceTree = "<group>";
+		};
+		568FB09B241029060051C89B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				568FB065240EDCE60051C89B /* AppDelegate.swift */,
+				568FB06D240EDCE60051C89B /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		568FB09C241029150051C89B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				568FB06F240EDCE60051C89B /* Main.storyboard */,
+				568FB074240EDCEB0051C89B /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

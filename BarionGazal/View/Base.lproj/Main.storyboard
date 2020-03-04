@@ -15,26 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjf-dc-5eN">
-                                <rect key="frame" x="816" y="30" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDY-g4-dbC">
+                                <rect key="frame" x="772" y="30" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="THK-3q-zSl"/>
-                                    <constraint firstAttribute="width" secondItem="Mjf-dc-5eN" secondAttribute="height" multiplier="1:1" id="eco-vv-icx"/>
+                                    <constraint firstAttribute="height" constant="50" id="v2V-TR-aqz"/>
+                                    <constraint firstAttribute="width" secondItem="eDY-g4-dbC" secondAttribute="height" multiplier="1:1" id="zGv-KS-Q8i"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="restart"/>
                                 <connections>
-                                    <action selector="reset:" destination="BV1-FR-VrT" eventType="touchUpInside" id="GWq-r7-K9e"/>
+                                    <action selector="reset:" destination="BV1-FR-VrT" eventType="touchUpInside" id="QAX-y1-6aC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Mjf-dc-5eN" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" constant="30" id="1hH-FJ-tjM"/>
-                            <constraint firstAttribute="trailing" secondItem="Mjf-dc-5eN" secondAttribute="trailing" constant="30" id="7tf-nd-cj3"/>
+                            <constraint firstItem="eDY-g4-dbC" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="30" id="kmR-Ai-DSF"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="eDY-g4-dbC" secondAttribute="trailing" constant="30" id="mYI-Sr-fEN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
                     <connections>
-                        <outlet property="botaorecomeco" destination="Mjf-dc-5eN" id="QI9-8a-dwH"/>
+                        <outlet property="botaorecomeco" destination="eDY-g4-dbC" id="lu0-kX-AVg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
