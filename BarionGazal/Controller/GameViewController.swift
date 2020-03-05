@@ -11,52 +11,50 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
-
-    @IBOutlet weak var botaorecomeco: UIButton!
-    @IBAction func reset(_ sender: Any) {
-        
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }
+    
+    @IBOutlet weak var botaoHome: UIButton!
+    @IBOutlet weak var botaoReset: UIButton!
+    @IBAction func resetScene(_ sender: Any) {
+        carregaCena()
     }
+    @IBAction func goHome(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        botaorecomeco.layer.zPosition = 50
+        botaoReset.layer.zPosition = 50
+        botaoHome.layer.zPosition = 50
+        carregaCena()
+        
+    }
+    
+    func carregaCena(){
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
+            let scene = SKScene(fileNamed: "Level\(Model.instance.faseSelecionada + 1)")
+            // Set the scale mode to scale to fit the window
+            scene!.scaleMode = .aspectFill
+            
+            // Present the scene
+            view.presentScene(scene)
+            
             
             view.ignoresSiblingOrder = true
             
             view.showsFPS = true
             view.showsNodeCount = true
         }
- 
     }
-
+    
+    
+    
     override var shouldAutorotate: Bool {
         return true
     }
-
+    
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -64,7 +62,7 @@ class GameViewController: UIViewController {
             return .all
         }
     }
-
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
