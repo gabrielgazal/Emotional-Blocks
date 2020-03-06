@@ -13,7 +13,7 @@ import SpriteKit
 class MenuViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 2
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

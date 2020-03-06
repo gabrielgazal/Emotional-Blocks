@@ -11,10 +11,17 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    
+    var player: SKNode!
+    var inimigos = 0
     
     override func didMove(to view: SKView) {
-      
+        self.children.forEach{ node in
+            if node.name == "green"{
+                player = node
+            } else if node.name == "red" {
+                inimigos += 1
+            }
+        }
     }
     
     
@@ -24,19 +31,43 @@ class GameScene: SKScene {
             if node.contains(pos){
                 if node.name == "red" {
                     node.removeFromParent()
-
+                    inimigos -= 1
+                    
                 }else if node.name == "blue"{
                     node.removeFromParent()
+                    inimigos -= 1
+
                 }
             }
             
         }
         
-      
     }
     
+    
+    func verificaVerde() -> Bool{
+        var res = false
+//        print(player.physicsBody!.velocity)
+//        print(player.physicsBody!.angularVelocity)
+        if (abs(player.physicsBody!.velocity.dx) < 0.001 && abs(player.physicsBody!.velocity.dy) < 0.001) && player.physicsBody!.angularVelocity < 0.001{
+            res = true
+        }
+        return res
+    }
+    
+    
+    
+    override func update(_ currentTime: TimeInterval) {
+        let resultadoVerde = verificaVerde()
+        print(inimigos)
+        if resultadoVerde && inimigos == 0{
+            print("top")
+        }
+    }
+    
+    
     func touchMoved(toPoint pos : CGPoint) {
-       
+        
     }
     
     func touchUp(atPoint pos : CGPoint) {
@@ -44,8 +75,8 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-
-       for t in touches { self.touchDown(atPoint: t.location(in: self)) }
+        
+        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -61,8 +92,5 @@ class GameScene: SKScene {
     }
     
     
-    override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
-        
-    }
+    
 }
