@@ -21,6 +21,8 @@ class GameViewController: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         botaoReset.layer.zPosition = 50
@@ -30,7 +32,8 @@ class GameViewController: UIViewController {
     }
     
     func carregaCena(){
-        
+        Model.instance.ganhouFase = false
+        Model.instance.perdeuFase = false
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             let scene = SKScene(fileNamed: "Level\(Model.instance.faseSelecionada + 1)")
@@ -38,6 +41,7 @@ class GameViewController: UIViewController {
             scene!.scaleMode = .aspectFill
             
             // Present the scene
+            scene?.size = view.bounds.size
             view.presentScene(scene)
             
             

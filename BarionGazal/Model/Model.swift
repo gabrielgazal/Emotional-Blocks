@@ -14,7 +14,10 @@ class Model{
     var faseSelecionada = 0
     var fases: [SKScene]!
     static var instance = Model()
-
+    
+    var ganhouFase = false
+    var perdeuFase = false
+    
     private init(){
         self.fases = [
             SKScene(fileNamed: "Level1")!,
