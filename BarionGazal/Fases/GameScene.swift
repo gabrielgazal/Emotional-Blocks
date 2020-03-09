@@ -12,13 +12,15 @@ import GameplayKit
 class GameScene: SKScene {
     
     var player: SKNode!
+    var verdes: [SKNode?] = []
     var inimigos = 0
  
     
     override func didMove(to view: SKView) {
         self.children.forEach{ node in
             if node.name == "green"{
-                player = node
+//                player = node
+                verdes.append(node)
             } else if node.name == "red" || node.name == "orange" {
                 inimigos += 1
             }
@@ -29,30 +31,55 @@ class GameScene: SKScene {
     
     
     func touchDown(atPoint pos : CGPoint) {
+//
+//        self.children.forEach{ node in
+//            if node.contains(pos){
+//                if node.name == "red" {
+//                    node.removeFromParent()
+//                    inimigos -= 1
+//
+//                }else if node.name == "blue"{
+//                    node.removeFromParent()
+//
+//                }
+//            }
+//
+//        }
         
-        self.children.forEach{ node in
-            if node.contains(pos){
-                if node.name == "red" || node.name == "blue"{
-                    node.removeFromParent()
-                    inimigos -= 1
-                    
-                }
-            }
-            
+        let node = atPoint(pos)
+        if node.name == "red" {
+            node.removeFromParent()
+            inimigos -= 1
+
+        }else if node.name == "blue"{
+            node.removeFromParent()
+
         }
-        
     }
     
     
-    func verificaVerde() -> Bool{
+    func verificaVerde(jog: SKNode) -> Bool{
+        
         var res = false
         //        print(player.physicsBody!.velocity)
         //        print(player.physicsBody!.angularVelocity)
-        if (abs(player.physicsBody!.velocity.dx) < 0.001 && abs(player.physicsBody!.velocity.dy) < 0.001) && player.physicsBody!.angularVelocity < 0.001{
+        if (abs(jog.physicsBody!.velocity.dx) < 0.001 && abs(jog.physicsBody!.velocity.dy) < 0.001) && jog.physicsBody!.angularVelocity < 0.001{
                 res = true
             
         }
         return res
+    }
+    
+    func verificaGreens() -> Bool{
+        var res = true
+        
+        for green in verdes{
+            if !verificaVerde(jog: green!){
+                res = false
+            }
+        }
+        return res
+        
     }
     func verificaVermelhos(){
         
@@ -67,21 +94,43 @@ class GameScene: SKScene {
         
     }
     
+    func verdesNaTela() -> Bool{
+        var res = true
+        
+        for jogs in verdes{
+            if (!intersects(jogs!)){
+                res = false
+            }
+        }
+        
+        return res
+    }
     
     
     override func update(_ currentTime: TimeInterval) {
-        let resultadoVerde = verificaVerde()
+//        let resultadoVerde = verificaVerde()
+        let resultadoVerde = verificaGreens()
+        let verdeTela = verdesNaTela()
+
         print(inimigos)
         verificaVermelhos()
         if resultadoVerde && inimigos == 0{
             print("top")
             Model.instance.ganhouFase = true
+            Model.instance.fases[Model.instance.faseSelecionada] = true
+            
         }
         
-        if (!intersects(player)){
+//        if (!intersects(player)){
+//            print("perdeu")
+//            Model.instance.perdeuFase = true
+//        }
+        
+        if !verdeTela{
             print("perdeu")
             Model.instance.perdeuFase = true
         }
+        
         
     }
     

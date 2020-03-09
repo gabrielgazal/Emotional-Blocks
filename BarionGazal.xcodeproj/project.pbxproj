@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		563786662415B5AD0080DF3F /* Level3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 563786632415B5AD0080DF3F /* Level3.sks */; };
+		563786672415B5AD0080DF3F /* Level5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 563786642415B5AD0080DF3F /* Level5.sks */; };
+		563786682415B5AD0080DF3F /* Level4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 563786652415B5AD0080DF3F /* Level4.sks */; };
+		5637866E2415C1440080DF3F /* Level8.sks in Resources */ = {isa = PBXBuildFile; fileRef = 563786692415C1440080DF3F /* Level8.sks */; };
+		5637866F2415C1440080DF3F /* Level9.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5637866A2415C1440080DF3F /* Level9.sks */; };
+		563786702415C1440080DF3F /* Level7.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5637866B2415C1440080DF3F /* Level7.sks */; };
+		563786712415C1440080DF3F /* Level10.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5637866C2415C1440080DF3F /* Level10.sks */; };
+		563786722415C1440080DF3F /* Level6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5637866D2415C1440080DF3F /* Level6.sks */; };
 		56762A1924102F5D00952ECE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56762A1824102F5D00952ECE /* MenuViewController.swift */; };
 		56762A1B24102FD900952ECE /* FaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56762A1A24102FD900952ECE /* FaseCollectionViewCell.swift */; };
 		56762A1E24104E7400952ECE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56762A1D24104E7400952ECE /* Model.swift */; };
@@ -41,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		563786632415B5AD0080DF3F /* Level3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level3.sks; sourceTree = "<group>"; };
+		563786642415B5AD0080DF3F /* Level5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level5.sks; sourceTree = "<group>"; };
+		563786652415B5AD0080DF3F /* Level4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level4.sks; sourceTree = "<group>"; };
+		563786692415C1440080DF3F /* Level8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level8.sks; sourceTree = "<group>"; };
+		5637866A2415C1440080DF3F /* Level9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level9.sks; sourceTree = "<group>"; };
+		5637866B2415C1440080DF3F /* Level7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level7.sks; sourceTree = "<group>"; };
+		5637866C2415C1440080DF3F /* Level10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level10.sks; sourceTree = "<group>"; };
+		5637866D2415C1440080DF3F /* Level6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level6.sks; sourceTree = "<group>"; };
 		56762A1824102F5D00952ECE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		56762A1A24102FD900952ECE /* FaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		56762A1D24104E7400952ECE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -151,9 +167,17 @@
 		568FB09A241028F90051C89B /* Fases */ = {
 			isa = PBXGroup;
 			children = (
-				56762A222411625B00952ECE /* Level2.sks */,
 				568FB06B240EDCE60051C89B /* GameScene.swift */,
 				568FB067240EDCE60051C89B /* Level1.sks */,
+				56762A222411625B00952ECE /* Level2.sks */,
+				563786632415B5AD0080DF3F /* Level3.sks */,
+				563786652415B5AD0080DF3F /* Level4.sks */,
+				563786642415B5AD0080DF3F /* Level5.sks */,
+				5637866D2415C1440080DF3F /* Level6.sks */,
+				5637866B2415C1440080DF3F /* Level7.sks */,
+				563786692415C1440080DF3F /* Level8.sks */,
+				5637866A2415C1440080DF3F /* Level9.sks */,
+				5637866C2415C1440080DF3F /* Level10.sks */,
 			);
 			path = Fases;
 			sourceTree = "<group>";
@@ -283,11 +307,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				568FB071240EDCE60051C89B /* Main.storyboard in Resources */,
+				563786722415C1440080DF3F /* Level6.sks in Resources */,
 				568FB068240EDCE60051C89B /* Level1.sks in Resources */,
+				563786712415C1440080DF3F /* Level10.sks in Resources */,
+				5637866F2415C1440080DF3F /* Level9.sks in Resources */,
 				56762A232411625B00952ECE /* Level2.sks in Resources */,
 				568FB073240EDCEB0051C89B /* Assets.xcassets in Resources */,
+				563786662415B5AD0080DF3F /* Level3.sks in Resources */,
 				568FB076240EDCEB0051C89B /* LaunchScreen.storyboard in Resources */,
+				563786672415B5AD0080DF3F /* Level5.sks in Resources */,
+				563786702415C1440080DF3F /* Level7.sks in Resources */,
 				568FB06A240EDCE60051C89B /* Actions.sks in Resources */,
+				563786682415B5AD0080DF3F /* Level4.sks in Resources */,
+				5637866E2415C1440080DF3F /* Level8.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

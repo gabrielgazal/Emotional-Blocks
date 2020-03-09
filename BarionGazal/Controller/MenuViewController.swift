@@ -13,7 +13,7 @@ import SpriteKit
 class MenuViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return Model.instance.numeroFasesTotal
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -21,6 +21,11 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "faseCell", for: indexPath) as! FaseCollectionViewCell
         cell.numeroLabel.text = "\(indexPath.row + 1)"
+        if Model.instance.fases[indexPath.row]{
+            cell.numeroLabel.backgroundColor = .green
+        }else{
+            cell.numeroLabel.backgroundColor = .red
+        }
         return cell
     }
     
@@ -55,6 +60,11 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.collection.delegate = self
         self.collection.dataSource = self
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            self.collection.reloadData()
+        }
     }
     
     

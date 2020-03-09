@@ -12,17 +12,14 @@ import SpriteKit
 class Model{
     
     var faseSelecionada = 0
-    var fases: [SKScene]!
+    var fases: [Bool] = [false,false,false,false,false,false,false,false,false,false]
     static var instance = Model()
-    
+    var numeroFasesTotal = 10
     var ganhouFase = false
     var perdeuFase = false
     
     private init(){
-        self.fases = [
-            SKScene(fileNamed: "Level1")!,
-            SKScene(fileNamed: "Level2")!
-        ]
+        
     }
 }
 
