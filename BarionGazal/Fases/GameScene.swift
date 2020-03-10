@@ -19,8 +19,8 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         self.children.forEach{ node in
             if node.name == "green"{
-//                player = node
                 verdes.append(node)
+                
             } else if node.name == "red" || node.name == "orange" {
                 inimigos += 1
             }
@@ -31,20 +31,6 @@ class GameScene: SKScene {
     
     
     func touchDown(atPoint pos : CGPoint) {
-//
-//        self.children.forEach{ node in
-//            if node.contains(pos){
-//                if node.name == "red" {
-//                    node.removeFromParent()
-//                    inimigos -= 1
-//
-//                }else if node.name == "blue"{
-//                    node.removeFromParent()
-//
-//                }
-//            }
-//
-//        }
         
         let node = atPoint(pos)
         if node.name == "red" {
@@ -61,8 +47,7 @@ class GameScene: SKScene {
     func verificaVerde(jog: SKNode) -> Bool{
         
         var res = false
-        //        print(player.physicsBody!.velocity)
-        //        print(player.physicsBody!.angularVelocity)
+        
         if (abs(jog.physicsBody!.velocity.dx) < 0.001 && abs(jog.physicsBody!.velocity.dy) < 0.001) && jog.physicsBody!.angularVelocity < 0.001{
                 res = true
             
@@ -108,7 +93,7 @@ class GameScene: SKScene {
     
     
     override func update(_ currentTime: TimeInterval) {
-//        let resultadoVerde = verificaVerde()
+        
         let resultadoVerde = verificaGreens()
         let verdeTela = verdesNaTela()
 
@@ -120,11 +105,6 @@ class GameScene: SKScene {
             Model.instance.fases[Model.instance.faseSelecionada] = true
             
         }
-        
-//        if (!intersects(player)){
-//            print("perdeu")
-//            Model.instance.perdeuFase = true
-//        }
         
         if !verdeTela{
             print("perdeu")
