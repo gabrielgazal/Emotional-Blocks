@@ -43,6 +43,7 @@ class GameScene: SKScene {
             node.removeFromParent()
 
         }
+        print(node.name)
     }
     
     

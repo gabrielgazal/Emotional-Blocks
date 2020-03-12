@@ -3,4 +3,54 @@
    uuid = "66DDA652-9965-41C8-98A3-F05420741E8B"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "233366A0-4526-41AD-8479-9586AA2E4F02"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BarionGazal/Resources/Sounds/AudioLibrary.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3"
+            endingLineNumber = "3"
+            landmarkName = "SongLibrary"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "233366A0-4526-41AD-8479-9586AA2E4F02 - da88f2728b903489"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarionGazal.SongLibrary.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;BarionGazal.SongLibrary&gt;"
+                  moduleName = "BarionGazal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielgazal/Documents/Academy/Nano%2004/Projeto/BarionGazal/BarionGazal/Resources/Sounds/AudioLibrary.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "4"
+                  endingLineNumber = "4"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "233366A0-4526-41AD-8479-9586AA2E4F02 - fa6cdb45ce7bccae"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarionGazal.SongLibrary.rawValue.getter : Swift.String"
+                  moduleName = "BarionGazal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielgazal/Documents/Academy/Nano%2004/Projeto/BarionGazal/BarionGazal/Resources/Sounds/AudioLibrary.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "4"
+                  endingLineNumber = "4"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

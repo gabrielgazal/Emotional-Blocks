@@ -32,6 +32,12 @@
 		56E6F9652419DAC000F5B93E /* CircledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F9642419DAC000F5B93E /* CircledButton.swift */; };
 		56E6F9672419DB9800F5B93E /* BudokanRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */; };
 		56E6F9692419DFED00F5B93E /* EditableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F9682419DFED00F5B93E /* EditableView.swift */; };
+		56E6F96E241A9F5500F5B93E /* AudioLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F96A241A9F5400F5B93E /* AudioLibrary.swift */; };
+		56E6F96F241A9F5500F5B93E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F96B241A9F5500F5B93E /* AudioManager.swift */; };
+		56E6F970241A9F5500F5B93E /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F96C241A9F5500F5B93E /* Song.swift */; };
+		56E6F971241A9F5500F5B93E /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F96D241A9F5500F5B93E /* SoundEffects.swift */; };
+		56E6F975241AA08000F5B93E /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56E6F974241AA08000F5B93E /* click.mp3 */; };
+		56E6F977241AA14B00F5B93E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F976241AA14B00F5B93E /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,12 @@
 		56E6F9642419DAC000F5B93E /* CircledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledButton.swift; sourceTree = "<group>"; };
 		56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BudokanRounded-Bold.ttf"; path = "../../../../../../../Downloads/budokan_rounded/BudokanRounded-Bold.ttf"; sourceTree = "<group>"; };
 		56E6F9682419DFED00F5B93E /* EditableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableView.swift; sourceTree = "<group>"; };
+		56E6F96A241A9F5400F5B93E /* AudioLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioLibrary.swift; sourceTree = "<group>"; };
+		56E6F96B241A9F5500F5B93E /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		56E6F96C241A9F5500F5B93E /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		56E6F96D241A9F5500F5B93E /* SoundEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
+		56E6F974241AA08000F5B93E /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		56E6F976241AA14B00F5B93E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +208,7 @@
 				568FB06D240EDCE60051C89B /* GameViewController.swift */,
 				56762A1824102F5D00952ECE /* MenuViewController.swift */,
 				56762A1A24102FD900952ECE /* FaseCollectionViewCell.swift */,
+				56E6F976241AA14B00F5B93E /* StartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,11 +225,24 @@
 		56E6F9632419DAA000F5B93E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56E6F973241A9FF900F5B93E /* Sounds */,
 				56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */,
 				56E6F9642419DAC000F5B93E /* CircledButton.swift */,
 				56E6F9682419DFED00F5B93E /* EditableView.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		56E6F973241A9FF900F5B93E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				56E6F974241AA08000F5B93E /* click.mp3 */,
+				56E6F96A241A9F5400F5B93E /* AudioLibrary.swift */,
+				56E6F96B241A9F5500F5B93E /* AudioManager.swift */,
+				56E6F96C241A9F5500F5B93E /* Song.swift */,
+				56E6F96D241A9F5500F5B93E /* SoundEffects.swift */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +362,7 @@
 				563786672415B5AD0080DF3F /* Level5.sks in Resources */,
 				563786702415C1440080DF3F /* Level7.sks in Resources */,
 				568FB06A240EDCE60051C89B /* Actions.sks in Resources */,
+				56E6F975241AA08000F5B93E /* click.mp3 in Resources */,
 				563786682415B5AD0080DF3F /* Level4.sks in Resources */,
 				5637866E2415C1440080DF3F /* Level8.sks in Resources */,
 			);
@@ -364,11 +391,16 @@
 			files = (
 				56762A1B24102FD900952ECE /* FaseCollectionViewCell.swift in Sources */,
 				568FB06C240EDCE60051C89B /* GameScene.swift in Sources */,
+				56E6F971241A9F5500F5B93E /* SoundEffects.swift in Sources */,
 				56E6F9692419DFED00F5B93E /* EditableView.swift in Sources */,
 				56E6F9652419DAC000F5B93E /* CircledButton.swift in Sources */,
 				568FB06E240EDCE60051C89B /* GameViewController.swift in Sources */,
+				56E6F970241A9F5500F5B93E /* Song.swift in Sources */,
 				56762A1E24104E7400952ECE /* Model.swift in Sources */,
+				56E6F977241AA14B00F5B93E /* StartViewController.swift in Sources */,
 				568FB066240EDCE60051C89B /* AppDelegate.swift in Sources */,
+				56E6F96E241A9F5500F5B93E /* AudioLibrary.swift in Sources */,
+				56E6F96F241A9F5500F5B93E /* AudioManager.swift in Sources */,
 				56762A1924102F5D00952ECE /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

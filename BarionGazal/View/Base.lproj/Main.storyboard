@@ -229,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="1625.2232142857142" y="85.507246376811594"/>
         </scene>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="wp1-4J-PnF">
             <objects>
-                <viewController id="XWm-hp-bk1" sceneMemberID="viewController">
+                <viewController id="XWm-hp-bk1" customClass="StartViewController" customModule="BarionGazal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RRu-FI-Tuy">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,6 +261,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="startGame:" destination="XWm-hp-bk1" eventType="touchUpInside" id="cB7-oR-day"/>
                                             <segue destination="15Q-4j-4gz" kind="show" id="M9U-Bo-eZC"/>
                                         </connections>
                                     </button>
@@ -278,6 +279,9 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openSEttings:" destination="XWm-hp-bk1" eventType="touchUpInside" id="mEF-YN-4Zc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbA-TL-aH2" customClass="CircledButton" customModule="BarionGazal" customModuleProvider="target">
                                         <rect key="frame" x="771" y="145" width="70" height="70"/>
@@ -293,6 +297,9 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openStore:" destination="XWm-hp-bk1" eventType="touchUpInside" id="uf8-Gm-gpC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

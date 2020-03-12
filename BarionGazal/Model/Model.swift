@@ -17,6 +17,7 @@ class Model{
     var numeroFasesTotal = 15
     var ganhouFase = false
     var perdeuFase = false
+    var somLigado = true
     
     private init(){
         

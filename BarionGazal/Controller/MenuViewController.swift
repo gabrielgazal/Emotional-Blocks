@@ -14,6 +14,8 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var homeButton: UIButton!
     @IBAction func backhome(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
+        AudioManager.shared.play(soundEffect: .button)
+
     }
     
     var spacing:CGFloat = 5.0
@@ -61,6 +63,7 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         Model.instance.faseSelecionada = indexPath.row
+        AudioManager.shared.play(soundEffect: .button)
         performSegue(withIdentifier: "faseSegue", sender: nil)
     
     }

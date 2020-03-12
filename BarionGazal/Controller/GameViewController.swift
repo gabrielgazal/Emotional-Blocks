@@ -16,9 +16,13 @@ class GameViewController: UIViewController {
     @IBOutlet weak var botaoReset: UIButton!
     @IBAction func resetScene(_ sender: Any) {
         carregaCena()
+        AudioManager.shared.play(soundEffect: .button)
+
     }
     @IBAction func goHome(_ sender: Any) {
         navigationController?.popToViewController((navigationController?.viewControllers[1])!, animated: true)
+        AudioManager.shared.play(soundEffect: .button)
+
     }
     
    
@@ -32,8 +36,7 @@ class GameViewController: UIViewController {
     }
     
     func carregaCena(){
-        
-        
+    
         Model.instance.ganhouFase = false
         Model.instance.perdeuFase = false
         if let view = self.view as! SKView? {
@@ -41,7 +44,7 @@ class GameViewController: UIViewController {
             let scene = SKScene(fileNamed: "Level\(Model.instance.faseSelecionada + 1)")
             // Set the scale mode to scale to fit the window
             scene!.scaleMode = .aspectFill
-            
+
             // Present the scene
             scene?.size = view.bounds.size
             
