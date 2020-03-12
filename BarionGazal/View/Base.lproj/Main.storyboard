@@ -39,7 +39,7 @@
                                             <action selector="backhome:" destination="15Q-4j-4gz" eventType="touchUpInside" id="eG9-Ex-Mbg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxG-wq-R5n" customClass="CircledButton" customModule="BarionGazal" customModuleProvider="target">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxG-wq-R5n" customClass="CircledButton" customModule="BarionGazal" customModuleProvider="target">
                                         <rect key="frame" x="174.5" y="187" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="QxG-wq-R5n" secondAttribute="height" multiplier="1:1" id="fGZ-nb-rEI"/>
@@ -138,7 +138,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUB-uH-jb9" customClass="CircledButton" customModule="BarionGazal" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUB-uH-jb9" customClass="CircledButton" customModule="BarionGazal" customModuleProvider="target">
                                 <rect key="frame" x="681.5" y="186.5" width="40" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -223,11 +223,105 @@
                     <connections>
                         <outlet property="botaoHome" destination="yvm-BF-mkd" id="Hj5-Rt-ENj"/>
                         <outlet property="botaoReset" destination="eDY-g4-dbC" id="cbx-LT-jQd"/>
+                        <segue destination="NIx-Fg-6lm" kind="presentation" identifier="winLoseSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="aRa-dn-GkB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1625.2232142857142" y="85.507246376811594"/>
+        </scene>
+        <!--Game Over Won View Controller-->
+        <scene sceneID="KS2-04-NK0">
+            <objects>
+                <viewController id="NIx-Fg-6lm" customClass="GameOverWonViewController" customModule="BarionGazal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tmv-jj-SDn">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-Bi-zDj">
+                                <rect key="frame" x="730" y="53" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="NIx-Fg-6lm" eventType="touchUpInside" id="zXq-gk-tzC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bDZ-Tk-LZS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="61K-An-PnJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYL-SX-pHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2365" y="86"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="GSF-3z-koB">
+            <objects>
+                <viewController id="XmD-xg-jiO" customClass="SettingsViewController" customModule="BarionGazal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ttv-xe-xgh">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzg-Xq-AuK">
+                                <rect key="frame" x="0.0" y="-31" width="896" height="455"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wlh-uA-684">
+                                    <rect key="frame" x="0.0" y="0.0" width="896" height="455"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="du6-jm-0jC" customClass="EditableView" customModule="BarionGazal" customModuleProvider="target">
+                                            <rect key="frame" x="243" y="91" width="410" height="273"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcl-pu-HhZ">
+                                                    <rect key="frame" x="356" y="8" width="46" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="DP9-Jl-YWV"/>
+                                                        <constraint firstAttribute="width" secondItem="mcl-pu-HhZ" secondAttribute="height" multiplier="23:15" id="mbW-zn-sdQ"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="dismissModal:" destination="XmD-xg-jiO" eventType="touchUpInside" id="fHz-zD-C9u"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="mcl-pu-HhZ" firstAttribute="top" secondItem="du6-jm-0jC" secondAttribute="top" constant="8" id="9Bt-et-idd"/>
+                                                <constraint firstAttribute="width" secondItem="du6-jm-0jC" secondAttribute="height" multiplier="15:10" id="Okm-J6-esL"/>
+                                                <constraint firstAttribute="trailing" secondItem="mcl-pu-HhZ" secondAttribute="trailing" constant="8" id="gFM-D0-J3Y"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="du6-jm-0jC" firstAttribute="height" secondItem="wlh-uA-684" secondAttribute="height" multiplier="0.6" id="0MT-Vy-XHv"/>
+                                        <constraint firstItem="du6-jm-0jC" firstAttribute="centerX" secondItem="wlh-uA-684" secondAttribute="centerX" id="CzA-Gn-Xux"/>
+                                        <constraint firstItem="du6-jm-0jC" firstAttribute="centerY" secondItem="wlh-uA-684" secondAttribute="centerY" id="dW7-ZS-ltv"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gzg-Xq-AuK" firstAttribute="centerY" secondItem="pKg-mu-lSQ" secondAttribute="centerY" id="KzC-84-Te2"/>
+                            <constraint firstItem="gzg-Xq-AuK" firstAttribute="height" secondItem="Ttv-xe-xgh" secondAttribute="height" multiplier="1.1" id="UTe-v2-m1f"/>
+                            <constraint firstItem="gzg-Xq-AuK" firstAttribute="centerX" secondItem="pKg-mu-lSQ" secondAttribute="centerX" id="eOV-gZ-NNG"/>
+                            <constraint firstItem="gzg-Xq-AuK" firstAttribute="width" secondItem="Ttv-xe-xgh" secondAttribute="width" id="uBh-p2-eBg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pKg-mu-lSQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tBJ-Kh-zyE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkx-Cd-xqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="-886"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="wp1-4J-PnF">
@@ -283,7 +377,7 @@
                                             <action selector="openSEttings:" destination="XWm-hp-bk1" eventType="touchUpInside" id="mEF-YN-4Zc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbA-TL-aH2" customClass="CircledButton" customModule="BarionGazal" customModuleProvider="target">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbA-TL-aH2" customClass="CircledButton" customModule="BarionGazal" customModuleProvider="target">
                                         <rect key="frame" x="771" y="145" width="70" height="70"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -327,6 +421,9 @@
                         <viewLayoutGuide key="safeArea" id="GMc-1t-06d"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pn8-fX-aRl"/>
+                    <connections>
+                        <segue destination="XmD-xg-jiO" kind="presentation" identifier="settingSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="abF-kd-zC0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQS-jI-bBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

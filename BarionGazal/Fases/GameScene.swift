@@ -14,10 +14,11 @@ class GameScene: SKScene {
     var player: SKNode!
     var verdes: [SKNode?] = []
     var inimigos = 0
- 
+    weak var viewController: GameViewController!
+    
     
     override func didMove(to view: SKView) {
-    
+        
         self.children.forEach{ node in
             node.zPosition = 10
             if node.name == "green"{
@@ -29,8 +30,10 @@ class GameScene: SKScene {
             
         }
         
+        let fundo = SKSpriteNode(imageNamed: "background")
+        fundo.zPosition = -10
+        scene?.addChild(fundo)
         
-    
     }
     
     
@@ -40,10 +43,10 @@ class GameScene: SKScene {
         if node.name == "red" {
             node.removeFromParent()
             inimigos -= 1
-
+            
         }else if node.name == "blue"{
             node.removeFromParent()
-
+            
         }
         print(node.name)
     }
@@ -54,7 +57,7 @@ class GameScene: SKScene {
         var res = false
         
         if (abs(jog.physicsBody!.velocity.dx) < 0.001 && abs(jog.physicsBody!.velocity.dy) < 0.001) && jog.physicsBody!.angularVelocity < 0.001{
-                res = true
+            res = true
             
         }
         return res
@@ -101,20 +104,23 @@ class GameScene: SKScene {
         
         let resultadoVerde = verificaGreens()
         let verdeTela = verdesNaTela()
-
+        
         print(inimigos)
         verificaVermelhos()
         if resultadoVerde && inimigos == 0{
-            print("top")
+            print("ganhou")
             Model.instance.ganhouFase = true
             Model.instance.fases[Model.instance.faseSelecionada] = true
             Model.instance.fasesPossiveis[Model.instance.faseSelecionada + 1] = true
+            viewController.gameOverWon()
             
         }
         
         if !verdeTela{
             print("perdeu")
             Model.instance.perdeuFase = true
+            viewController.gameOverWon()
+            
         }
         
         

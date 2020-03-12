@@ -1,5 +1,5 @@
 //
-//  StartViewController.swift
+//  SettingsViewController.swift
 //  BarionGazal
 //
 //  Created by Gabriel Gazal on 12/03/20.
@@ -8,22 +8,12 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
-    @IBAction func startGame(_ sender: Any) {
-        AudioManager.shared.play(soundEffect: .button)
+class SettingsViewController: UIViewController {
 
-    }
-    
-    @IBAction func openSEttings(_ sender: Any) {
+    @IBAction func dismissModal(_ sender: Any) {
         AudioManager.shared.play(soundEffect: .button)
-        performSegue(withIdentifier: "settingSegue", sender: nil)
+        self.dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func openStore(_ sender: Any) {
-        AudioManager.shared.play(soundEffect: .button)
-
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

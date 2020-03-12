@@ -17,15 +17,15 @@ class GameViewController: UIViewController {
     @IBAction func resetScene(_ sender: Any) {
         carregaCena()
         AudioManager.shared.play(soundEffect: .button)
-
+        
     }
     @IBAction func goHome(_ sender: Any) {
         navigationController?.popToViewController((navigationController?.viewControllers[1])!, animated: true)
         AudioManager.shared.play(soundEffect: .button)
-
+        
     }
     
-   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,17 +36,17 @@ class GameViewController: UIViewController {
     }
     
     func carregaCena(){
-    
+        
         Model.instance.ganhouFase = false
         Model.instance.perdeuFase = false
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            let scene = SKScene(fileNamed: "Level\(Model.instance.faseSelecionada + 1)")
+            let scene = SKScene(fileNamed: "Level\(Model.instance.faseSelecionada + 1)") as! GameScene
             // Set the scale mode to scale to fit the window
-            scene!.scaleMode = .aspectFill
-
+            scene.scaleMode = .aspectFill
+            scene.viewController = self
             // Present the scene
-            scene?.size = view.bounds.size
+            scene.size = view.bounds.size
             
             
             
@@ -59,7 +59,12 @@ class GameViewController: UIViewController {
             view.showsNodeCount = true
         }
     }
-
+    
+    func gameOverWon(){
+        performSegue(withIdentifier: "winLoseSegue", sender: nil)
+        
+    }
+    
     
     override var shouldAutorotate: Bool {
         return true

@@ -38,6 +38,8 @@
 		56E6F971241A9F5500F5B93E /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F96D241A9F5500F5B93E /* SoundEffects.swift */; };
 		56E6F975241AA08000F5B93E /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56E6F974241AA08000F5B93E /* click.mp3 */; };
 		56E6F977241AA14B00F5B93E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F976241AA14B00F5B93E /* StartViewController.swift */; };
+		56E6F979241AAD6E00F5B93E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F978241AAD6E00F5B93E /* SettingsViewController.swift */; };
+		56E6F97B241AB60F00F5B93E /* GameOverWonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F97A241AB60F00F5B93E /* GameOverWonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		56E6F96D241A9F5500F5B93E /* SoundEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
 		56E6F974241AA08000F5B93E /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
 		56E6F976241AA14B00F5B93E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		56E6F978241AAD6E00F5B93E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		56E6F97A241AB60F00F5B93E /* GameOverWonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverWonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,8 +211,10 @@
 				568FB065240EDCE60051C89B /* AppDelegate.swift */,
 				568FB06D240EDCE60051C89B /* GameViewController.swift */,
 				56762A1824102F5D00952ECE /* MenuViewController.swift */,
+				56E6F97A241AB60F00F5B93E /* GameOverWonViewController.swift */,
 				56762A1A24102FD900952ECE /* FaseCollectionViewCell.swift */,
 				56E6F976241AA14B00F5B93E /* StartViewController.swift */,
+				56E6F978241AAD6E00F5B93E /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -398,8 +404,10 @@
 				56E6F970241A9F5500F5B93E /* Song.swift in Sources */,
 				56762A1E24104E7400952ECE /* Model.swift in Sources */,
 				56E6F977241AA14B00F5B93E /* StartViewController.swift in Sources */,
+				56E6F979241AAD6E00F5B93E /* SettingsViewController.swift in Sources */,
 				568FB066240EDCE60051C89B /* AppDelegate.swift in Sources */,
 				56E6F96E241A9F5500F5B93E /* AudioLibrary.swift in Sources */,
+				56E6F97B241AB60F00F5B93E /* GameOverWonViewController.swift in Sources */,
 				56E6F96F241A9F5500F5B93E /* AudioManager.swift in Sources */,
 				56762A1924102F5D00952ECE /* MenuViewController.swift in Sources */,
 			);
