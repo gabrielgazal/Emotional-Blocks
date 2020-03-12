@@ -15,9 +15,13 @@ class StartViewController: UIViewController {
     }
     
     @IBAction func openSEttings(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+
     }
     
     @IBAction func openStore(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+
     }
     
     override func viewDidLoad() {

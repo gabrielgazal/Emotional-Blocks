@@ -28,6 +28,8 @@ class GameScene: SKScene {
             }
             
         }
+        
+        
     
     }
     
@@ -106,6 +108,7 @@ class GameScene: SKScene {
             print("top")
             Model.instance.ganhouFase = true
             Model.instance.fases[Model.instance.faseSelecionada] = true
+            Model.instance.fasesPossiveis[Model.instance.faseSelecionada + 1] = true
             
         }
         

@@ -12,7 +12,8 @@ import SpriteKit
 class Model{
     
     var faseSelecionada = 0
-    var fases: [Bool] = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+    var fases: [Bool] = []
+    var fasesPossiveis: [Bool] = [true]
     static var instance = Model()
     var numeroFasesTotal = 15
     var ganhouFase = false
@@ -21,6 +22,10 @@ class Model{
     
     private init(){
         
+        for i in 0...numeroFasesTotal{
+            fases.append(false)
+            fasesPossiveis.append(false)
+        }
     }
 }
 

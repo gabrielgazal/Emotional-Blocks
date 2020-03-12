@@ -15,7 +15,7 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBAction func backhome(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
         AudioManager.shared.play(soundEffect: .button)
-
+        
     }
     
     var spacing:CGFloat = 5.0
@@ -32,40 +32,47 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
         cell.numeroLabel.text = "\(indexPath.row + 1)"
         
         if Model.instance.fases[indexPath.row]{
-//            cell.colorView.backgroundColor = #colorLiteral(red: 0.9098039216, green: 0.9019607843, blue: 0.9568627451, alpha: 1)
-            cell.colorView.backgroundColor = .green
-
+            cell.colorView.backgroundColor = #colorLiteral(red: 0.8901960784, green: 0.8941176471, blue: 1, alpha: 1)
             
-        }else{
+            
+        }else if Model.instance.fasesPossiveis[indexPath.row]{
             cell.colorView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.9333333333, blue: 0.9333333333, alpha: 1)
+        }else{
+            cell.colorView.backgroundColor = #colorLiteral(red: 0.862745098, green: 0.862745098, blue: 0.862745098, alpha: 1)
         }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-           return 10
-       }
-       
-       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-           return spacing
-       }
-       
-       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-           return .zero
-       }
-       
-//       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let width = (self.collection.frame.width / 10.0) - 10.0
-//
-////           return CGSize(width: width, height: width)
-//        return CGSize(width: 150, height: 150)
-//       }
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return spacing
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .zero
+    }
+    
+    //       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    //        let width = (self.collection.frame.width / 10.0) - 10.0
+    //
+    ////           return CGSize(width: width, height: width)
+    //        return CGSize(width: 150, height: 150)
+    //       }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        Model.instance.faseSelecionada = indexPath.row
-        AudioManager.shared.play(soundEffect: .button)
-        performSegue(withIdentifier: "faseSegue", sender: nil)
-    
+        let modelo = Model.instance
+        
+        if modelo.fasesPossiveis[indexPath.row]{
+            Model.instance.faseSelecionada = indexPath.row
+            AudioManager.shared.play(soundEffect: .button)
+            performSegue(withIdentifier: "faseSegue", sender: nil)
+        }else{
+            //            AudioManager.shared.play(soundEffect: .button)
+        }
+        
     }
     @IBOutlet weak var collection: UICollectionView!
     
@@ -82,5 +89,5 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     
-
+    
 }
