@@ -12,7 +12,10 @@ class GameOverWonViewController: UIViewController {
 
     @IBAction func dismiss(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        viewController.vaiProMenu()
     }
+    
+    var viewController: GameViewController!
     override func viewDidLoad() {
         super.viewDidLoad()
 

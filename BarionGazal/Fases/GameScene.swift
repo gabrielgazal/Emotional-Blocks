@@ -109,6 +109,8 @@ class GameScene: SKScene {
         verificaVermelhos()
         if resultadoVerde && inimigos == 0{
             print("ganhou")
+            isPaused = true
+
             Model.instance.ganhouFase = true
             Model.instance.fases[Model.instance.faseSelecionada] = true
             Model.instance.fasesPossiveis[Model.instance.faseSelecionada + 1] = true
@@ -118,6 +120,7 @@ class GameScene: SKScene {
         
         if !verdeTela{
             print("perdeu")
+            isPaused = true
             Model.instance.perdeuFase = true
             viewController.gameOverWon()
             

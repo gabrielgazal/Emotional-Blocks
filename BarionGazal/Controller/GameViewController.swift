@@ -19,10 +19,15 @@ class GameViewController: UIViewController {
         AudioManager.shared.play(soundEffect: .button)
         
     }
+    
     @IBAction func goHome(_ sender: Any) {
+        vaiProMenu()
+    }
+    
+    func vaiProMenu(){
+        
         navigationController?.popToViewController((navigationController?.viewControllers[1])!, animated: true)
         AudioManager.shared.play(soundEffect: .button)
-        
     }
     
     
@@ -65,6 +70,11 @@ class GameViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         let proxima =  segue.destination as! GameOverWonViewController
+        
+        proxima.viewController = self
+    }
     
     override var shouldAutorotate: Bool {
         return true
