@@ -29,6 +29,9 @@
 		568FB076240EDCEB0051C89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568FB074240EDCEB0051C89B /* LaunchScreen.storyboard */; };
 		568FB081240EDCEB0051C89B /* BarionGazalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568FB080240EDCEB0051C89B /* BarionGazalTests.swift */; };
 		568FB08C240EDCEB0051C89B /* BarionGazalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568FB08B240EDCEB0051C89B /* BarionGazalUITests.swift */; };
+		56E6F9652419DAC000F5B93E /* CircledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F9642419DAC000F5B93E /* CircledButton.swift */; };
+		56E6F9672419DB9800F5B93E /* BudokanRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */; };
+		56E6F9692419DFED00F5B93E /* EditableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F9682419DFED00F5B93E /* EditableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		568FB087240EDCEB0051C89B /* BarionGazalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarionGazalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		568FB08B240EDCEB0051C89B /* BarionGazalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarionGazalUITests.swift; sourceTree = "<group>"; };
 		568FB08D240EDCEB0051C89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56E6F9642419DAC000F5B93E /* CircledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledButton.swift; sourceTree = "<group>"; };
+		56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BudokanRounded-Bold.ttf"; path = "../../../../../../../Downloads/budokan_rounded/BudokanRounded-Bold.ttf"; sourceTree = "<group>"; };
+		56E6F9682419DFED00F5B93E /* EditableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 		568FB064240EDCE60051C89B /* BarionGazal */ = {
 			isa = PBXGroup;
 			children = (
+				56E6F9632419DAA000F5B93E /* Resources */,
 				56762A1C24104E6800952ECE /* Model */,
 				568FB09B241029060051C89B /* Controller */,
 				568FB09A241028F90051C89B /* Fases */,
@@ -200,6 +207,16 @@
 				568FB074240EDCEB0051C89B /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		56E6F9632419DAA000F5B93E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */,
+				56E6F9642419DAC000F5B93E /* CircledButton.swift */,
+				56E6F9682419DFED00F5B93E /* EditableView.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E6F9672419DB9800F5B93E /* BudokanRounded-Bold.ttf in Resources */,
 				568FB071240EDCE60051C89B /* Main.storyboard in Resources */,
 				563786722415C1440080DF3F /* Level6.sks in Resources */,
 				568FB068240EDCE60051C89B /* Level1.sks in Resources */,
@@ -346,6 +364,8 @@
 			files = (
 				56762A1B24102FD900952ECE /* FaseCollectionViewCell.swift in Sources */,
 				568FB06C240EDCE60051C89B /* GameScene.swift in Sources */,
+				56E6F9692419DFED00F5B93E /* EditableView.swift in Sources */,
+				56E6F9652419DAC000F5B93E /* CircledButton.swift in Sources */,
 				568FB06E240EDCE60051C89B /* GameViewController.swift in Sources */,
 				56762A1E24104E7400952ECE /* Model.swift in Sources */,
 				568FB066240EDCE60051C89B /* AppDelegate.swift in Sources */,

@@ -17,7 +17,9 @@ class GameScene: SKScene {
  
     
     override func didMove(to view: SKView) {
+    
         self.children.forEach{ node in
+            node.zPosition = 10
             if node.name == "green"{
                 verdes.append(node)
                 

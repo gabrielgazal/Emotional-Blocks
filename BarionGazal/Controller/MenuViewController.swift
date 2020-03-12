@@ -11,8 +11,12 @@ import SpriteKit
 
 
 class MenuViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    @IBOutlet weak var homeButton: UIButton!
+    @IBAction func backhome(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
     
-    var spacing = 10.0
+    var spacing:CGFloat = 5.0
     var nCelulas = 10.0
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -26,19 +30,22 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
         cell.numeroLabel.text = "\(indexPath.row + 1)"
         
         if Model.instance.fases[indexPath.row]{
-            cell.numeroLabel.backgroundColor = .green
+//            cell.colorView.backgroundColor = #colorLiteral(red: 0.9098039216, green: 0.9019607843, blue: 0.9568627451, alpha: 1)
+            cell.colorView.backgroundColor = .green
+
+            
         }else{
-            cell.numeroLabel.backgroundColor = .red
+            cell.colorView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.9333333333, blue: 0.9333333333, alpha: 1)
         }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-           return 20
+           return 10
        }
        
        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-           return 10
+           return spacing
        }
        
        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

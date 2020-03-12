@@ -11,4 +11,5 @@ import UIKit
 class FaseCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var numeroLabel: UILabel!
     
+    @IBOutlet weak var colorView: EditableView!
 }

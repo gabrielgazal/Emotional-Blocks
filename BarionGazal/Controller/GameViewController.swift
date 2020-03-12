@@ -18,7 +18,7 @@ class GameViewController: UIViewController {
         carregaCena()
     }
     @IBAction func goHome(_ sender: Any) {
-        navigationController?.popToRootViewController(animated: true)
+        navigationController?.popToViewController((navigationController?.viewControllers[1])!, animated: true)
     }
     
    
@@ -32,6 +32,8 @@ class GameViewController: UIViewController {
     }
     
     func carregaCena(){
+        
+        
         Model.instance.ganhouFase = false
         Model.instance.perdeuFase = false
         if let view = self.view as! SKView? {
@@ -42,6 +44,9 @@ class GameViewController: UIViewController {
             
             // Present the scene
             scene?.size = view.bounds.size
+            
+            
+            
             view.presentScene(scene)
             
             
