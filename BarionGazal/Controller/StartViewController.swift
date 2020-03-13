@@ -11,7 +11,7 @@ import UIKit
 class StartViewController: UIViewController {
     @IBAction func startGame(_ sender: Any) {
         AudioManager.shared.play(soundEffect: .button)
-
+        
     }
     
     @IBAction func openSEttings(_ sender: Any) {
@@ -21,24 +21,40 @@ class StartViewController: UIViewController {
     
     @IBAction func openStore(_ sender: Any) {
         AudioManager.shared.play(soundEffect: .button)
-
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let defaults = UserDefaults.standard
+        if defaults.object(forKey: "fasesPossiveis") == nil{
+            
+            let max = Model.instance.numeroFasesTotal
+            for i in 0...max{
+                Model.instance.fasesPossiveis.append(false)
+                
+            }
+            defaults.set(Model.instance.fasesPossiveis, forKey: "fasesPossiveis")
+        }else{
+            Model.instance.fasesPossiveis = defaults.object(forKey: "fasesPossiveis") as? [Bool] ?? [Bool]()
+        }
+        
+        
+        if defaults.object(forKey: "fases") == nil{
+            let max = Model.instance.numeroFasesTotal
+            for i in 0...max{
+                Model.instance.fases.append(false)
+            }
+            defaults.set(Model.instance.fases, forKey: "fases")
+        }else{
+            Model.instance.fases = defaults.object(forKey: "fases") as? [Bool] ?? [Bool]()
+        }
+        
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+/*for i in 0...numeroFasesTotal{
+ fases.append(false)
+ fasesPossiveis.append(false)
+ }*/

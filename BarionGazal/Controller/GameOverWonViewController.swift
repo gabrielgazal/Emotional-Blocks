@@ -14,6 +14,7 @@ class GameOverWonViewController: UIViewController {
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var nextResetButton: UIButton!
     
+    @IBOutlet weak var menu: NSLayoutConstraint!
     @IBAction func backMenu(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
         viewController.vaiProMenu()
@@ -34,22 +35,28 @@ class GameOverWonViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var colorView: EditableView!
     var viewController: GameViewController!
     override func viewDidLoad() {
         super.viewDidLoad()
         if Model.instance.ganhouFase{
             if Model.instance.faseSelecionada + 1 != Model.instance.numeroFasesTotal{
-                MainLabel.text = "ganhou!"
+                MainLabel.text = "WELL DONE!"
+                MainLabel.textColor = #colorLiteral(red: 0.4941176471, green: 0.9019607843, blue: 0.5215686275, alpha: 1)
                 menuButton.setBackgroundImage(UIImage(named: "backMenu"), for: .normal)
                 nextResetButton.setBackgroundImage(UIImage(named: "NextArrowButton"), for: .normal)
             }else{
-                MainLabel.text = "ACABO TUDO"
+                MainLabel.text = "END OF THE GAME"
                 menuButton.setBackgroundImage(UIImage(named: "backMenu"), for: .normal)
                 nextResetButton.isHidden = true
-                menuButton.layer.position.x = self.view.frame.width/2
+                MainLabel.textColor = #colorLiteral(red: 0.6085866094, green: 0.7251073122, blue: 1, alpha: 1)
+
+                
+                menu.constant = 35
             }
         }else{
-            MainLabel.text = "perdeu :("
+            MainLabel.text = "TRY AGAIN"
+            MainLabel.textColor = #colorLiteral(red: 0.9607843137, green: 0.5294117647, blue: 0.5294117647, alpha: 1)
             menuButton.setBackgroundImage(UIImage(named: "backMenu"), for: .normal)
             nextResetButton.setBackgroundImage(UIImage(named: "reset"), for: .normal)
         }

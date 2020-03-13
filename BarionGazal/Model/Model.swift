@@ -15,17 +15,13 @@ class Model{
     var fases: [Bool] = []
     var fasesPossiveis: [Bool] = [true]
     static var instance = Model()
-    var numeroFasesTotal = 3
+    var numeroFasesTotal = 10
     var ganhouFase = false
     var perdeuFase = false
     var somLigado = true
     
     private init(){
         
-        for i in 0...numeroFasesTotal{
-            fases.append(false)
-            fasesPossiveis.append(false)
-        }
     }
 }
 

@@ -72,7 +72,7 @@
 		56762A1A24102FD900952ECE /* FaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		56762A1D24104E7400952ECE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56762A222411625B00952ECE /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
-		568FB062240EDCE60051C89B /* BarionGazal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarionGazal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		568FB062240EDCE60051C89B /* Emotional Blocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emotional Blocks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		568FB065240EDCE60051C89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		568FB067240EDCE60051C89B /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1.sks; sourceTree = "<group>"; };
 		568FB069240EDCE60051C89B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		568FB063240EDCE60051C89B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				568FB062240EDCE60051C89B /* BarionGazal.app */,
+				568FB062240EDCE60051C89B /* Emotional Blocks.app */,
 				568FB07C240EDCEB0051C89B /* BarionGazalTests.xctest */,
 				568FB087240EDCEB0051C89B /* BarionGazalUITests.xctest */,
 			);
@@ -268,7 +268,7 @@
 			);
 			name = BarionGazal;
 			productName = BarionGazal;
-			productReference = 568FB062240EDCE60051C89B /* BarionGazal.app */;
+			productReference = 568FB062240EDCE60051C89B /* Emotional Blocks.app */;
 			productType = "com.apple.product-type.application";
 		};
 		568FB07B240EDCEB0051C89B /* BarionGazalTests */ = {
@@ -590,7 +590,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nano4.BarionGazal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Emotional Blocks";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -608,7 +608,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nano4.BarionGazal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Emotional Blocks";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
