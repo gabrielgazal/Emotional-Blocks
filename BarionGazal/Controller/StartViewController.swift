@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Lottie
 
 class StartViewController: UIViewController {
     @IBAction func startGame(_ sender: Any) {
         AudioManager.shared.play(soundEffect: .button)
+        mainAnimation.stop()
         
     }
     
@@ -23,10 +25,15 @@ class StartViewController: UIViewController {
         AudioManager.shared.play(soundEffect: .button)
         
     }
+    @IBOutlet weak var mainAnimation: AnimationView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //animacao
+        startAnimation()
+//        
         let defaults = UserDefaults.standard
         if defaults.object(forKey: "fasesPossiveis") == nil{
             
@@ -53,8 +60,10 @@ class StartViewController: UIViewController {
         
         
     }
+    
+    func startAnimation(){
+        mainAnimation.animation = Animation.named("cenaprincipal")
+        mainAnimation.loopMode = .playOnce
+        mainAnimation.play()
+    }
 }
-/*for i in 0...numeroFasesTotal{
- fases.append(false)
- fasesPossiveis.append(false)
- }*/

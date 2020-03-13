@@ -10,11 +10,11 @@ import Foundation
 import SpriteKit
 
 class Model{
-    
+    static let instance = Model()
+
     var faseSelecionada = 0
     var fases: [Bool] = []
     var fasesPossiveis: [Bool] = [true]
-    static var instance = Model()
     var numeroFasesTotal = 10
     var ganhouFase = false
     var perdeuFase = false

@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2B10CB54990DE9204CE8D7 /* Pods_BarionGazal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2292E050BA965A2BCE52AF87 /* Pods_BarionGazal.framework */; };
+		4CD529E1ADFB0ECE8E3EC7D1 /* Pods_BarionGazal_BarionGazalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A55DD2ABDBFD431DD12EADA /* Pods_BarionGazal_BarionGazalUITests.framework */; };
+		563343B5241C278C009F504D /* cenaprincipal.json in Resources */ = {isa = PBXBuildFile; fileRef = 563343B4241C278C009F504D /* cenaprincipal.json */; };
 		563786662415B5AD0080DF3F /* Level3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 563786632415B5AD0080DF3F /* Level3.sks */; };
 		563786672415B5AD0080DF3F /* Level5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 563786642415B5AD0080DF3F /* Level5.sks */; };
 		563786682415B5AD0080DF3F /* Level4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 563786652415B5AD0080DF3F /* Level4.sks */; };
@@ -40,6 +43,7 @@
 		56E6F977241AA14B00F5B93E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F976241AA14B00F5B93E /* StartViewController.swift */; };
 		56E6F979241AAD6E00F5B93E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F978241AAD6E00F5B93E /* SettingsViewController.swift */; };
 		56E6F97B241AB60F00F5B93E /* GameOverWonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F97A241AB60F00F5B93E /* GameOverWonViewController.swift */; };
+		86031C62D5C35BB1F7E2AFF5 /* Pods_BarionGazalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F250C6181942B857F65467 /* Pods_BarionGazalTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2292E050BA965A2BCE52AF87 /* Pods_BarionGazal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarionGazal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24355588AB7E67DABE85E2C1 /* Pods-BarionGazal-BarionGazalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazal-BarionGazalUITests.debug.xcconfig"; path = "Target Support Files/Pods-BarionGazal-BarionGazalUITests/Pods-BarionGazal-BarionGazalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F9B36BA23E717B7C1C0F32E /* Pods-BarionGazalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazalTests.debug.xcconfig"; path = "Target Support Files/Pods-BarionGazalTests/Pods-BarionGazalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A55DD2ABDBFD431DD12EADA /* Pods_BarionGazal_BarionGazalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarionGazal_BarionGazalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		563343B4241C278C009F504D /* cenaprincipal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cenaprincipal.json; path = ../../../../../../../../Downloads/cenaprincipal.json; sourceTree = "<group>"; };
 		563786632415B5AD0080DF3F /* Level3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level3.sks; sourceTree = "<group>"; };
 		563786642415B5AD0080DF3F /* Level5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level5.sks; sourceTree = "<group>"; };
 		563786652415B5AD0080DF3F /* Level4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level4.sks; sourceTree = "<group>"; };
@@ -99,6 +108,11 @@
 		56E6F976241AA14B00F5B93E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		56E6F978241AAD6E00F5B93E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		56E6F97A241AB60F00F5B93E /* GameOverWonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverWonViewController.swift; sourceTree = "<group>"; };
+		57753C0245A08673621F98B0 /* Pods-BarionGazal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazal.release.xcconfig"; path = "Target Support Files/Pods-BarionGazal/Pods-BarionGazal.release.xcconfig"; sourceTree = "<group>"; };
+		649D83FB7F80D4949B478029 /* Pods-BarionGazal-BarionGazalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazal-BarionGazalUITests.release.xcconfig"; path = "Target Support Files/Pods-BarionGazal-BarionGazalUITests/Pods-BarionGazal-BarionGazalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6663E585FD34D78287E9712E /* Pods-BarionGazalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazalTests.release.xcconfig"; path = "Target Support Files/Pods-BarionGazalTests/Pods-BarionGazalTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D4740330A1F35FE606E2B7A /* Pods-BarionGazal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazal.debug.xcconfig"; path = "Target Support Files/Pods-BarionGazal/Pods-BarionGazal.debug.xcconfig"; sourceTree = "<group>"; };
+		B7F250C6181942B857F65467 /* Pods_BarionGazalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarionGazalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2B10CB54990DE9204CE8D7 /* Pods_BarionGazal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86031C62D5C35BB1F7E2AFF5 /* Pods_BarionGazalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,12 +136,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD529E1ADFB0ECE8E3EC7D1 /* Pods_BarionGazal_BarionGazalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34D47E895A62F14342DD7A3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D4740330A1F35FE606E2B7A /* Pods-BarionGazal.debug.xcconfig */,
+				57753C0245A08673621F98B0 /* Pods-BarionGazal.release.xcconfig */,
+				24355588AB7E67DABE85E2C1 /* Pods-BarionGazal-BarionGazalUITests.debug.xcconfig */,
+				649D83FB7F80D4949B478029 /* Pods-BarionGazal-BarionGazalUITests.release.xcconfig */,
+				2F9B36BA23E717B7C1C0F32E /* Pods-BarionGazalTests.debug.xcconfig */,
+				6663E585FD34D78287E9712E /* Pods-BarionGazalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		56762A1C24104E6800952ECE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +171,8 @@
 				568FB07F240EDCEB0051C89B /* BarionGazalTests */,
 				568FB08A240EDCEB0051C89B /* BarionGazalUITests */,
 				568FB063240EDCE60051C89B /* Products */,
+				34D47E895A62F14342DD7A3C /* Pods */,
+				D967DA962A6384DFFAEDEEB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +263,7 @@
 		56E6F9632419DAA000F5B93E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56E6F982241C223F00F5B93E /* Animations */,
 				56E6F973241A9FF900F5B93E /* Sounds */,
 				56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */,
 				56E6F9642419DAC000F5B93E /* CircledButton.swift */,
@@ -251,6 +284,24 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		56E6F982241C223F00F5B93E /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				563343B4241C278C009F504D /* cenaprincipal.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		D967DA962A6384DFFAEDEEB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2292E050BA965A2BCE52AF87 /* Pods_BarionGazal.framework */,
+				4A55DD2ABDBFD431DD12EADA /* Pods_BarionGazal_BarionGazalUITests.framework */,
+				B7F250C6181942B857F65467 /* Pods_BarionGazalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 568FB090240EDCEB0051C89B /* Build configuration list for PBXNativeTarget "BarionGazal" */;
 			buildPhases = (
+				3A371D37267FBD7DC352C208 /* [CP] Check Pods Manifest.lock */,
 				568FB05E240EDCE60051C89B /* Sources */,
 				568FB05F240EDCE60051C89B /* Frameworks */,
 				568FB060240EDCE60051C89B /* Resources */,
+				D06D2B1B9CCC7F8BD865FEF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 568FB093240EDCEB0051C89B /* Build configuration list for PBXNativeTarget "BarionGazalTests" */;
 			buildPhases = (
+				8398CF6C24B4D73340B7A74E /* [CP] Check Pods Manifest.lock */,
 				568FB078240EDCEB0051C89B /* Sources */,
 				568FB079240EDCEB0051C89B /* Frameworks */,
 				568FB07A240EDCEB0051C89B /* Resources */,
@@ -293,9 +347,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 568FB096240EDCEB0051C89B /* Build configuration list for PBXNativeTarget "BarionGazalUITests" */;
 			buildPhases = (
+				BAB8DCD633D3F66FE58EC229 /* [CP] Check Pods Manifest.lock */,
 				568FB083240EDCEB0051C89B /* Sources */,
 				568FB084240EDCEB0051C89B /* Frameworks */,
 				568FB085240EDCEB0051C89B /* Resources */,
+				D9E2053D7F3B1CF002A4E6D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,6 +424,7 @@
 				563786672415B5AD0080DF3F /* Level5.sks in Resources */,
 				563786702415C1440080DF3F /* Level7.sks in Resources */,
 				568FB06A240EDCE60051C89B /* Actions.sks in Resources */,
+				563343B5241C278C009F504D /* cenaprincipal.json in Resources */,
 				56E6F975241AA08000F5B93E /* click.mp3 in Resources */,
 				563786682415B5AD0080DF3F /* Level4.sks in Resources */,
 				5637866E2415C1440080DF3F /* Level8.sks in Resources */,
@@ -389,6 +446,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A371D37267FBD7DC352C208 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarionGazal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8398CF6C24B4D73340B7A74E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarionGazalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB8DCD633D3F66FE58EC229 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarionGazal-BarionGazalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D06D2B1B9CCC7F8BD865FEF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarionGazal/Pods-BarionGazal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarionGazal/Pods-BarionGazal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarionGazal/Pods-BarionGazal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9E2053D7F3B1CF002A4E6D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarionGazal-BarionGazalUITests/Pods-BarionGazal-BarionGazalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarionGazal-BarionGazalUITests/Pods-BarionGazal-BarionGazalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarionGazal-BarionGazalUITests/Pods-BarionGazal-BarionGazalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		568FB05E240EDCE60051C89B /* Sources */ = {
@@ -580,6 +740,7 @@
 		};
 		568FB091240EDCEB0051C89B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4740330A1F35FE606E2B7A /* Pods-BarionGazal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -589,7 +750,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nano4.BarionGazal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nano4.emo;
 				PRODUCT_NAME = "Emotional Blocks";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,6 +759,7 @@
 		};
 		568FB092240EDCEB0051C89B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57753C0245A08673621F98B0 /* Pods-BarionGazal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,7 +769,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nano4.BarionGazal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nano4.emo;
 				PRODUCT_NAME = "Emotional Blocks";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -616,6 +778,7 @@
 		};
 		568FB094240EDCEB0051C89B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F9B36BA23E717B7C1C0F32E /* Pods-BarionGazalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -637,6 +800,7 @@
 		};
 		568FB095240EDCEB0051C89B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6663E585FD34D78287E9712E /* Pods-BarionGazalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -658,6 +822,7 @@
 		};
 		568FB097240EDCEB0051C89B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24355588AB7E67DABE85E2C1 /* Pods-BarionGazal-BarionGazalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -677,6 +842,7 @@
 		};
 		568FB098240EDCEB0051C89B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649D83FB7F80D4949B478029 /* Pods-BarionGazal-BarionGazalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

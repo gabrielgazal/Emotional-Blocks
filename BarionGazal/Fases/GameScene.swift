@@ -60,7 +60,7 @@ class GameScene: SKScene {
             node.removeFromParent()
             
         }
-        print(node.name)
+//        print(node.name)
     }
     
     
@@ -117,7 +117,7 @@ class GameScene: SKScene {
         let resultadoVerde = verificaGreens()
         let verdeTela = verdesNaTela()
         
-        print(inimigos)
+//        print(inimigos)
         verificaVermelhos()
         if resultadoVerde && inimigos == 0{
             print("ganhou")
