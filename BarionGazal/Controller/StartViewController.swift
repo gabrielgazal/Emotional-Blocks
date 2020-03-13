@@ -10,6 +10,7 @@ import UIKit
 import Lottie
 
 class StartViewController: UIViewController {
+    var primeiravVez = true
     @IBAction func startGame(_ sender: Any) {
         AudioManager.shared.play(soundEffect: .button)
         mainAnimation.stop()
@@ -61,9 +62,15 @@ class StartViewController: UIViewController {
         
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        startAnimation()
+    }
     func startAnimation(){
-        mainAnimation.animation = Animation.named("cenaprincipal")
-        mainAnimation.loopMode = .playOnce
-        mainAnimation.play()
+        
+            mainAnimation.animation = Animation.named("cenaprincipal")
+            mainAnimation.loopMode = .playOnce
+            mainAnimation.play()
+            primeiravVez = false
     }
 }
