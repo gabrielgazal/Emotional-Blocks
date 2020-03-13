@@ -15,7 +15,7 @@ class Model{
     var fases: [Bool] = []
     var fasesPossiveis: [Bool] = [true]
     static var instance = Model()
-    var numeroFasesTotal = 15
+    var numeroFasesTotal = 3
     var ganhouFase = false
     var perdeuFase = false
     var somLigado = true

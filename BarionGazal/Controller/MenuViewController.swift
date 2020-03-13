@@ -29,7 +29,7 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "faseCell", for: indexPath) as! FaseCollectionViewCell
-        cell.numeroLabel.text = "\(indexPath.row + 1)"
+        cell.numeroLabel.text = " \(indexPath.row + 1)"
         
         if Model.instance.fases[indexPath.row]{
             cell.colorView.backgroundColor = #colorLiteral(red: 0.8901960784, green: 0.8941176471, blue: 1, alpha: 1)

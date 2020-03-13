@@ -15,8 +15,20 @@ class GameViewController: UIViewController {
     @IBOutlet weak var botaoHome: UIButton!
     @IBOutlet weak var botaoReset: UIButton!
     @IBAction func resetScene(_ sender: Any) {
-        carregaCena()
         AudioManager.shared.play(soundEffect: .button)
+        
+        if !botaoReset.isSelected{
+            botaoReset.setBackgroundImage(UIImage(named: "reset"), for: .normal)
+            botaoHome.isHidden = false
+            botaoReset.isSelected = true
+            
+        }else{
+            botaoReset.setBackgroundImage(UIImage(named: "SandButton"), for: .normal)
+            carregaCena()
+            botaoHome.isHidden = true
+            botaoReset.isSelected = false
+
+        }
         
     }
     
@@ -60,8 +72,8 @@ class GameViewController: UIViewController {
             
             view.ignoresSiblingOrder = true
             
-            view.showsFPS = true
-            view.showsNodeCount = true
+            view.showsFPS = false
+            view.showsNodeCount = false
         }
     }
     
