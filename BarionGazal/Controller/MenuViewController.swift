@@ -19,7 +19,7 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     var spacing:CGFloat = 5.0
-    var nCelulas = 10.0
+    var nCelulas = 15.0
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Model.instance.numeroFasesTotal

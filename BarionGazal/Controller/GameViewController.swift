@@ -28,6 +28,7 @@ class GameViewController: UIViewController {
             botaoHome.isHidden = true
             botaoReset.isSelected = false
 
+
         }
         
     }
@@ -54,6 +55,7 @@ class GameViewController: UIViewController {
     
     func carregaCena(){
         
+        Model.instance.toquesFase[Model.instance.faseSelecionada] = 0
         Model.instance.ganhouFase = false
         Model.instance.perdeuFase = false
         if let view = self.view as! SKView? {

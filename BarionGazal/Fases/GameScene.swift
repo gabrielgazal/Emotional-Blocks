@@ -55,13 +55,18 @@ class GameScene: SKScene {
         if node.name == "red" {
             node.removeFromParent()
             inimigos -= 1
+            Model.instance.toquesFase[Model.instance.faseSelecionada] += 1
+
             
         }else if node.name == "blue"{
             node.removeFromParent()
+            Model.instance.toquesFase[Model.instance.faseSelecionada] += 1
+
             
         }
-//        print(node.name)
+        
     }
+    
     
     
     func verificaVerde(jog: SKNode) -> Bool{
@@ -114,6 +119,7 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         
+        print(Model.instance.toquesFase[Model.instance.faseSelecionada])
         let resultadoVerde = verificaGreens()
         let verdeTela = verdesNaTela()
         
