@@ -37,6 +37,7 @@
 		56A409402420286D00D8B0C1 /* Level14.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56A4093B2420286D00D8B0C1 /* Level14.sks */; };
 		56A409412420286D00D8B0C1 /* Level12.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56A4093C2420286D00D8B0C1 /* Level12.sks */; };
 		56A409422420286D00D8B0C1 /* Level15.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56A4093D2420286D00D8B0C1 /* Level15.sks */; };
+		56A40944242145A900D8B0C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A40943242145A900D8B0C1 /* GoogleService-Info.plist */; };
 		56E6F9652419DAC000F5B93E /* CircledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F9642419DAC000F5B93E /* CircledButton.swift */; };
 		56E6F9672419DB9800F5B93E /* BudokanRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */; };
 		56E6F9692419DFED00F5B93E /* EditableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F9682419DFED00F5B93E /* EditableView.swift */; };
@@ -107,6 +108,7 @@
 		56A4093B2420286D00D8B0C1 /* Level14.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level14.sks; sourceTree = "<group>"; };
 		56A4093C2420286D00D8B0C1 /* Level12.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level12.sks; sourceTree = "<group>"; };
 		56A4093D2420286D00D8B0C1 /* Level15.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level15.sks; sourceTree = "<group>"; };
+		56A40943242145A900D8B0C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		56E6F9642419DAC000F5B93E /* CircledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledButton.swift; sourceTree = "<group>"; };
 		56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BudokanRounded-Bold.ttf"; path = "../../../../../../../Downloads/budokan_rounded/BudokanRounded-Bold.ttf"; sourceTree = "<group>"; };
 		56E6F9682419DFED00F5B93E /* EditableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableView.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				568FB069240EDCE60051C89B /* Actions.sks */,
 				568FB09C241029150051C89B /* View */,
 				568FB072240EDCEB0051C89B /* Assets.xcassets */,
+				56A40943242145A900D8B0C1 /* GoogleService-Info.plist */,
 				568FB077240EDCEB0051C89B /* Info.plist */,
 			);
 			path = BarionGazal;
@@ -445,6 +448,7 @@
 				56A4093F2420286D00D8B0C1 /* Level13.sks in Resources */,
 				56E6F975241AA08000F5B93E /* click.mp3 in Resources */,
 				56A409412420286D00D8B0C1 /* Level12.sks in Resources */,
+				56A40944242145A900D8B0C1 /* GoogleService-Info.plist in Resources */,
 				5631E6DB241FFFE2007893E6 /* Level6.sks in Resources */,
 				56A409422420286D00D8B0C1 /* Level15.sks in Resources */,
 				5631E6D9241FFFE2007893E6 /* Level9.sks in Resources */,

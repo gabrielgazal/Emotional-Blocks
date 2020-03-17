@@ -8,6 +8,10 @@ target 'BarionGazal' do
   # Pods for BarionGazal
  pod 'lottie-ios'
  
+ # add the Firebase pod for Google Analytics
+ pod 'Firebase'
+ # add pods for any other desired Firebase products
+ 
   target 'BarionGazalTests' do
     inherit! :search_paths
     # Pods for testing
