@@ -21,6 +21,7 @@ class Model{
     var perdeuFase = false
     var somLigado = true
     
+    
     private init(){
         
     }

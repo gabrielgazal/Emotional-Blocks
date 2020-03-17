@@ -10,9 +10,38 @@ import UIKit
 import SpriteKit
 import GameplayKit
 import Firebase
+import GoogleMobileAds
+
+//intersticial ads
+
+extension GameViewController: GADInterstitialDelegate{
+    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        self.loadInterAd()
+    }
+    
+    func loadInterAd(){
+        let id = "ca-app-pub-6036434756897883/9940097604"
+        let testId = "ca-app-pub-3940256099942544/4411468910"
+        let ad = GADInterstitial(adUnitID: testId)
+        ad.delegate = self
+        ad.load(GADRequest())
+        self.interAd = ad
+    }
+    
+    func presentInterAd(){
+        guard self .interAd.isReady else {return}
+        
+        self.interAd.present(fromRootViewController: self)
+    }
+    
+}
+
 
 class GameViewController: UIViewController {
     
+    var interAd: GADInterstitial!
+    var gamesPlayed: Int = 0
     @IBOutlet weak var botaoHome: UIButton!
     @IBOutlet weak var botaoReset: UIButton!
     @IBAction func resetScene(_ sender: Any) {
@@ -55,13 +84,22 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         botaoReset.layer.zPosition = 50
         botaoHome.layer.zPosition = 50
-        carregaCena()
+        loadInterAd()
         
+        carregaCena()
         
     }
     
     func carregaCena(){
-        
+        //carrega um ad
+
+        if gamesPlayed == 3{
+            gamesPlayed = 0
+            presentInterAd()
+        } else{
+            gamesPlayed += 1
+        }
+        //
         Model.instance.toquesFase[Model.instance.faseSelecionada] = 0
         Model.instance.ganhouFase = false
         Model.instance.perdeuFase = false
@@ -84,7 +122,6 @@ class GameViewController: UIViewController {
             
             view.showsFPS = false
             view.showsNodeCount = false
-            
             
         }
     }
