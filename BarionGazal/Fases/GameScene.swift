@@ -8,6 +8,7 @@
 
 import SpriteKit
 import GameplayKit
+import Firebase
 
 class GameScene: SKScene {
     
@@ -36,15 +37,15 @@ class GameScene: SKScene {
         
         for child in children {
             if let field = child.childNode(withName: "campinho") as? SKFieldNode {
-
+                
                 field.direction = .init(-9.6, 0, 0)
             } else if let field = child.childNode(withName: "edadivarg") as? SKFieldNode {
-                            field.direction = .init(0, 9.6, 0)
-
+                field.direction = .init(0, 9.6, 0)
+                
             } else if let field = child.childNode(withName: "ohnipmac") as? SKFieldNode {
-                            field.direction = .init(9.6, 0, 0)
-
-                        }
+                field.direction = .init(9.6, 0, 0)
+                
+            }
         }
     }
     
@@ -56,12 +57,12 @@ class GameScene: SKScene {
             node.removeFromParent()
             inimigos -= 1
             Model.instance.toquesFase[Model.instance.faseSelecionada] += 1
-
+            
             
         }else if node.name == "blue"{
             node.removeFromParent()
             Model.instance.toquesFase[Model.instance.faseSelecionada] += 1
-
+            
             
         }
         
@@ -123,11 +124,11 @@ class GameScene: SKScene {
         let resultadoVerde = verificaGreens()
         let verdeTela = verdesNaTela()
         
-//        print(inimigos)
+        //        print(inimigos)
         verificaVermelhos()
         if resultadoVerde && inimigos == 0{
-            print("ganhou")
-
+            //            print("ganhou")
+            
             Model.instance.ganhouFase = true
             Model.instance.fases[Model.instance.faseSelecionada] = true
             Model.instance.fasesPossiveis[Model.instance.faseSelecionada + 1] = true
@@ -138,19 +139,22 @@ class GameScene: SKScene {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
                 self.isPaused = true
                 self.viewController.gameOverWon()
-
+                
             })
+            
         }
         
         if !verdeTela{
-            print("perdeu")
+            //            print("perdeu")
             Model.instance.perdeuFase = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3 , execute: {
                 self.isPaused = true
-
+                
                 self.viewController.gameOverWon()
-
+                
             })
+            
+            
         }
         
         

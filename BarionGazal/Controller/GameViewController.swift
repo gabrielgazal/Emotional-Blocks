@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import Firebase
 
 class GameViewController: UIViewController {
     
@@ -27,9 +28,14 @@ class GameViewController: UIViewController {
             carregaCena()
             botaoHome.isHidden = true
             botaoReset.isSelected = false
-
-
+            
+            
         }
+        
+        //log evento
+        Analytics.logEvent("resetou fase", parameters: [
+            AnalyticsParameterContentType: "Nova Fase"
+        ])
         
     }
     
@@ -51,6 +57,7 @@ class GameViewController: UIViewController {
         botaoHome.layer.zPosition = 50
         carregaCena()
         
+        
     }
     
     func carregaCena(){
@@ -66,6 +73,7 @@ class GameViewController: UIViewController {
             scene.viewController = self
             // Present the scene
             scene.size = view.bounds.size
+            scene.name = "Level\(Model.instance.faseSelecionada + 1)"
             
             
             
@@ -76,8 +84,12 @@ class GameViewController: UIViewController {
             
             view.showsFPS = false
             view.showsNodeCount = false
+            
+            
         }
     }
+    
+    
     
     func gameOverWon(){
         performSegue(withIdentifier: "winLoseSegue", sender: nil)
@@ -85,7 +97,7 @@ class GameViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         let proxima =  segue.destination as! GameOverWonViewController
+        let proxima =  segue.destination as! GameOverWonViewController
         
         proxima.viewController = self
     }

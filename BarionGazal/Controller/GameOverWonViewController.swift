@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class GameOverWonViewController: UIViewController {
 
@@ -60,6 +61,8 @@ class GameOverWonViewController: UIViewController {
             menuButton.setBackgroundImage(UIImage(named: "backMenu"), for: .normal)
             nextResetButton.setBackgroundImage(UIImage(named: "reset"), for: .normal)
         }
+        
+      
     }
     
 

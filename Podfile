@@ -7,7 +7,8 @@ target 'BarionGazal' do
 
   # Pods for BarionGazal
  pod 'lottie-ios'
- 
+ pod 'Google-Mobile-Ads-SDK'
+
  # add the Firebase pod for Google Analytics
  pod 'Firebase'
  # add pods for any other desired Firebase products
