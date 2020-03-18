@@ -120,7 +120,7 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         
-        print(Model.instance.toquesFase[Model.instance.faseSelecionada])
+//        print(Model.instance.toquesFase[Model.instance.faseSelecionada])
         let resultadoVerde = verificaGreens()
         let verdeTela = verdesNaTela()
         

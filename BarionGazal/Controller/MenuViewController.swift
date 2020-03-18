@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import Firebase
 
 
 class MenuViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
@@ -55,13 +56,6 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return .zero
     }
     
-    //       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    //        let width = (self.collection.frame.width / 10.0) - 10.0
-    //
-    ////           return CGSize(width: width, height: width)
-    //        return CGSize(width: 150, height: 150)
-    //       }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let modelo = Model.instance
         
@@ -72,6 +66,11 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }else{
             //            AudioManager.shared.play(soundEffect: .button)
         }
+        
+        Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+        AnalyticsParameterContentType: "fase selecionada",
+        AnalyticsParameterItemID: indexPath.row + 1
+        ])
         
     }
     @IBOutlet weak var collection: UICollectionView!

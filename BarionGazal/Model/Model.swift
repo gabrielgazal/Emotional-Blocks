@@ -16,7 +16,9 @@ class Model{
     var fases: [Bool] = []
     var fasesPossiveis: [Bool] = [true]
     var toquesFase: [Int] = []
-    var numeroFasesTotal = 15
+    var numeroFasesTotal = 22
+    
+    
     var ganhouFase = false
     var perdeuFase = false
     var somLigado = true

@@ -23,7 +23,7 @@ extension GameViewController: GADInterstitialDelegate{
     func loadInterAd(){
         let id = "ca-app-pub-6036434756897883/9940097604"
         let testId = "ca-app-pub-3940256099942544/4411468910"
-        let ad = GADInterstitial(adUnitID: testId)
+        let ad = GADInterstitial(adUnitID: id)
         ad.delegate = self
         ad.load(GADRequest())
         self.interAd = ad
@@ -40,6 +40,7 @@ extension GameViewController: GADInterstitialDelegate{
 
 class GameViewController: UIViewController {
     
+    var adsPlayed = 0
     var interAd: GADInterstitial!
     var gamesPlayed: Int = 0
     @IBOutlet weak var botaoHome: UIButton!
@@ -62,8 +63,10 @@ class GameViewController: UIViewController {
         }
         
         //log evento
-        Analytics.logEvent("resetou fase", parameters: [
-            AnalyticsParameterContentType: "Nova Fase"
+        
+        Analytics.logEvent("resetou_fase", parameters: [
+            AnalyticsParameterContentType: "reset",
+            AnalyticsParameterItemID: "Level \(Model.instance.faseSelecionada + 1) recomecado"
         ])
         
     }
@@ -92,10 +95,16 @@ class GameViewController: UIViewController {
     
     func carregaCena(){
         //carrega um ad
-
+        
         if gamesPlayed == 3{
             gamesPlayed = 0
             presentInterAd()
+            adsPlayed += 1
+            //log evento
+            Analytics.logEvent("tocou_ad", parameters: [
+                       AnalyticsParameterContentType: "ad",
+                       AnalyticsParameterItemID: "tocou ad pela \(adsPlayed) vez"
+                   ])
         } else{
             gamesPlayed += 1
         }

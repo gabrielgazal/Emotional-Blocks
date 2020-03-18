@@ -36,7 +36,7 @@ class StartViewController: UIViewController {
         startAnimation()
 //        
         let defaults = UserDefaults.standard
-        if defaults.object(forKey: "fasesPossiveis") == nil || defaults.object(forKey: "fasesPossiveis") as? [Bool] ?? [Bool]() != Model.instance.fasesPossiveis{
+        if defaults.object(forKey: "fasesPossiveis") == nil {
             
             let max = Model.instance.numeroFasesTotal
             for i in 0...max{
@@ -49,7 +49,7 @@ class StartViewController: UIViewController {
         }
         
         
-        if defaults.object(forKey: "fases") == nil || defaults.object(forKey: "fases") as? [Bool] ?? [Bool]() != Model.instance.fases{
+        if defaults.object(forKey: "fases") == nil {
             let max = Model.instance.numeroFasesTotal
             for i in 0...max{
                 Model.instance.fases.append(false)
@@ -59,7 +59,7 @@ class StartViewController: UIViewController {
             Model.instance.fases = defaults.object(forKey: "fases") as? [Bool] ?? [Bool]()
         }
         
-        if defaults.object(forKey: "toques") == nil || defaults.object(forKey: "toques") as? [Int] ?? [Int]() != Model.instance.toquesFase{
+        if defaults.object(forKey: "toques") == nil {
             let max = Model.instance.numeroFasesTotal
             for i in 0...max{
                 Model.instance.toquesFase.append(0)
