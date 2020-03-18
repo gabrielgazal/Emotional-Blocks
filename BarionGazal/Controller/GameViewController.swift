@@ -96,7 +96,7 @@ class GameViewController: UIViewController {
     func carregaCena(){
         //carrega um ad
         
-        if gamesPlayed == 3{
+        if gamesPlayed == 5{
             gamesPlayed = 0
             presentInterAd()
             adsPlayed += 1
