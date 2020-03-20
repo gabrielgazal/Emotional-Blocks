@@ -17,6 +17,9 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
         navigationController?.popToRootViewController(animated: true)
         AudioManager.shared.play(soundEffect: .button)
         
+        let lightGen = UIImpactFeedbackGenerator(style: .light)
+        lightGen.impactOccurred()
+        
     }
     
     var spacing:CGFloat = 5.0
@@ -63,7 +66,13 @@ class MenuViewController: UIViewController, UICollectionViewDelegate, UICollecti
             Model.instance.faseSelecionada = indexPath.row
             AudioManager.shared.play(soundEffect: .button)
             performSegue(withIdentifier: "faseSegue", sender: nil)
+
+            let lightGen = UIImpactFeedbackGenerator(style: .light)
+            lightGen.impactOccurred()
         }else{
+
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.warning)
             //            AudioManager.shared.play(soundEffect: .button)
         }
         

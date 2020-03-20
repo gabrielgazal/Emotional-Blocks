@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5w5-zR-WKY">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -24,8 +25,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FqO-pT-R0C">
                                 <rect key="frame" x="0.0" y="-0.5" width="896" height="414"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Iyp-kr-oXY">
-                                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Iyp-kr-oXY">
+                                        <rect key="frame" x="0.0" y="-21" width="896" height="455.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1Z-bU-BpO">
                                         <rect key="frame" x="55" y="304" width="70" height="70"/>
@@ -57,13 +58,13 @@
                                 <constraints>
                                     <constraint firstItem="Iyp-kr-oXY" firstAttribute="centerX" secondItem="FqO-pT-R0C" secondAttribute="centerX" id="0rI-sL-Gdr"/>
                                     <constraint firstItem="Iyp-kr-oXY" firstAttribute="centerY" secondItem="FqO-pT-R0C" secondAttribute="centerY" id="RMg-N9-BRS"/>
-                                    <constraint firstItem="Iyp-kr-oXY" firstAttribute="height" secondItem="FqO-pT-R0C" secondAttribute="height" id="lK1-rC-esx"/>
+                                    <constraint firstItem="Iyp-kr-oXY" firstAttribute="height" secondItem="FqO-pT-R0C" secondAttribute="height" multiplier="1.1" id="lK1-rC-esx"/>
                                     <constraint firstAttribute="bottom" secondItem="b1Z-bU-BpO" secondAttribute="bottom" constant="40" id="m5j-y6-t09"/>
                                     <constraint firstItem="b1Z-bU-BpO" firstAttribute="leading" secondItem="FqO-pT-R0C" secondAttribute="leading" constant="55" id="qRb-9P-5S0"/>
                                     <constraint firstItem="Iyp-kr-oXY" firstAttribute="width" secondItem="FqO-pT-R0C" secondAttribute="width" id="qyP-lq-Kfd"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9sW-Lb-O8M">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9sW-Lb-O8M">
                                 <rect key="frame" x="229.5" y="72" width="437" height="269"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -188,14 +189,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDY-g4-dbC" customClass="CircledButton" customModule="Emotional_Blocks" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDY-g4-dbC" customClass="CircledButton" customModule="Emotional_Blocks" customModuleProvider="target">
                                 <rect key="frame" x="786" y="40" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="v2V-TR-aqz"/>
                                     <constraint firstAttribute="width" secondItem="eDY-g4-dbC" secondAttribute="height" multiplier="1:1" id="zGv-KS-Q8i"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" backgroundImage="SandButton"/>
+                                <state key="normal" backgroundImage="reset"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="4"/>
@@ -205,7 +206,7 @@
                                     <action selector="resetScene:" destination="BV1-FR-VrT" eventType="touchUpInside" id="6ac-be-AaA"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvm-BF-mkd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvm-BF-mkd">
                                 <rect key="frame" x="786" y="125" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yvm-BF-mkd" secondAttribute="height" multiplier="1:1" id="og0-bK-UeZ"/>
@@ -273,7 +274,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCs-u9-Tze" customClass="CircledButton" customModule="Emotional_Blocks" customModuleProvider="target">
-                                                    <rect key="frame" x="110.5" y="118" width="70" height="70"/>
+                                                    <rect key="frame" x="110.5" y="121.5" width="70" height="70"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="nCs-u9-Tze" secondAttribute="height" multiplier="1:1" id="mXw-g0-znA"/>
@@ -289,7 +290,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fv-Sn-xoD" customClass="CircledButton" customModule="Emotional_Blocks" customModuleProvider="target">
-                                                    <rect key="frame" x="210.5" y="118" width="70" height="70"/>
+                                                    <rect key="frame" x="210.5" y="121.5" width="70" height="70"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="7fv-Sn-xoD" secondAttribute="height" multiplier="1:1" id="45p-bg-SLT"/>
@@ -327,7 +328,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adY-cj-KYF">
-                                            <rect key="frame" x="292" y="137" width="312" height="52.5"/>
+                                            <rect key="frame" x="292" y="137" width="312" height="56"/>
                                             <fontDescription key="fontDescription" name="BudokanRounded-Bold" family="Budokan Rounded" pointSize="45"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -461,10 +462,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKQ-hq-9oC">
                                 <rect key="frame" x="0.0" y="-21.5" width="896" height="455.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Tnr-rd-qUV">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Tnr-rd-qUV">
                                         <rect key="frame" x="0.0" y="0.0" width="896" height="455.5"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4g-fl-Yhy" customClass="AnimationView" customModule="Lottie">
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="P4g-fl-Yhy" customClass="AnimationView" customModule="Lottie">
                                         <rect key="frame" x="0.0" y="0.0" width="896" height="455.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -588,12 +589,12 @@
         <image name="HomeButton" width="70" height="69"/>
         <image name="MainButton" width="199" height="69"/>
         <image name="NextArrowButton" width="40" height="40"/>
-        <image name="SandButton" width="70" height="69"/>
         <image name="SettingButton" width="70" height="69"/>
         <image name="ShopButton" width="70" height="69"/>
         <image name="backMenu" width="70" height="69"/>
         <image name="background" width="896" height="414"/>
         <image name="backgroundButton" width="70" height="69"/>
         <image name="mainBackground" width="896" height="414"/>
+        <image name="reset" width="70" height="69"/>
     </resources>
 </document>

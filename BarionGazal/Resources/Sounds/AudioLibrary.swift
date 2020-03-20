@@ -13,6 +13,7 @@ enum SongLibrary : String, CaseIterable {
 
 enum SoundEffectLibrary : String, CaseIterable {
     case button = "click.mp3"
+    case  pop = "pop.mp3"
 //    case timer = "Contagem-Regressiva-2.mp3"
 //    case jail = "Large-steel-door-closing.mp3"
 //    case inocente = "Acusado-Inocente-_Dramático_.mp3"

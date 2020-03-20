@@ -19,8 +19,16 @@ class GameOverWonViewController: UIViewController {
     @IBAction func backMenu(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
         viewController.vaiProMenu()
+
+        let lightGen = UIImpactFeedbackGenerator(style: .light)
+        lightGen.impactOccurred()
+        AudioManager.shared.play(soundEffect: .button)
     }
     @IBAction func restartNext(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+
+        let lightGen = UIImpactFeedbackGenerator(style: .light)
+        lightGen.impactOccurred()
         if Model.instance.ganhouFase{
             if Model.instance.faseSelecionada != Model.instance.numeroFasesTotal{
                 self.dismiss(animated: true, completion: nil)

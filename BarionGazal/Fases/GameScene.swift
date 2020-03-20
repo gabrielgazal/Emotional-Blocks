@@ -51,19 +51,30 @@ class GameScene: SKScene {
     
     
     func touchDown(atPoint pos : CGPoint) {
-        
+        let generator = UINotificationFeedbackGenerator()
+        let medGen = UIImpactFeedbackGenerator(style: .medium)
+        let lightGen = UIImpactFeedbackGenerator(style: .light)
+        let heavyGen = UIImpactFeedbackGenerator(style: .heavy)
+
         let node = atPoint(pos)
         if node.name == "red" {
+            generator.notificationOccurred(.success)
             node.removeFromParent()
             inimigos -= 1
             Model.instance.toquesFase[Model.instance.faseSelecionada] += 1
+            AudioManager.shared.play(soundEffect: .pop)
             
             
         }else if node.name == "blue"{
             node.removeFromParent()
+            AudioManager.shared.play(soundEffect: .pop)
+            generator.notificationOccurred(.success)
             Model.instance.toquesFase[Model.instance.faseSelecionada] += 1
             
-            
+        } else if node.name == "green" || node.name == "orange" || node.name == "bloco"{
+//            generator.notificationOccurred(.warning)
+            heavyGen.impactOccurred()
+
         }
         
     }
@@ -120,42 +131,47 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         
-//        print(Model.instance.toquesFase[Model.instance.faseSelecionada])
         let resultadoVerde = verificaGreens()
         let verdeTela = verdesNaTela()
-        
-        //        print(inimigos)
+        var incremento = 0
         verificaVermelhos()
-        if resultadoVerde && inimigos == 0{
-            //            print("ganhou")
+        
+        if incremento % 10 == 0{
+            incremento = 0
             
-            Model.instance.ganhouFase = true
-            Model.instance.fases[Model.instance.faseSelecionada] = true
-            Model.instance.fasesPossiveis[Model.instance.faseSelecionada + 1] = true
-            UserDefaults.standard.set(Model.instance.fasesPossiveis, forKey: "fasesPossiveis")
-            UserDefaults.standard.set(Model.instance.fases, forKey: "fases")
-            
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
-                self.isPaused = true
-                self.viewController.gameOverWon()
+            if resultadoVerde && inimigos == 0{
                 
-            })
+                Model.instance.ganhouFase = true
+                Model.instance.fases[Model.instance.faseSelecionada] = true
+                Model.instance.fasesPossiveis[Model.instance.faseSelecionada + 1] = true
+                UserDefaults.standard.set(Model.instance.fasesPossiveis, forKey: "fasesPossiveis")
+                UserDefaults.standard.set(Model.instance.fases, forKey: "fases")
+                
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
+                    self.isPaused = true
+                    self.viewController.gameOverWon()
+                    
+                })
+                
+            }
             
+            if !verdeTela{
+                //            print("perdeu")
+                Model.instance.perdeuFase = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3 , execute: {
+                    self.isPaused = true
+                    
+                    self.viewController.gameOverWon()
+                    
+                })
+                
+                
+            }
+        }else{
+            incremento += 1
         }
         
-        if !verdeTela{
-            //            print("perdeu")
-            Model.instance.perdeuFase = true
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3 , execute: {
-                self.isPaused = true
-                
-                self.viewController.gameOverWon()
-                
-            })
-            
-            
-        }
         
         
     }
