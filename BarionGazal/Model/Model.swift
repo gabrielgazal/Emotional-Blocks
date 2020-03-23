@@ -16,7 +16,7 @@ class Model{
     var fases: [Bool] = []
     var fasesPossiveis: [Bool] = [true]
     var toquesFase: [Int] = []
-    var numeroFasesTotal = 22
+    var numeroFasesTotal = 25
     
     
     var ganhouFase = false

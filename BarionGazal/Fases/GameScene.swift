@@ -15,6 +15,8 @@ class GameScene: SKScene {
     var player: SKNode!
     var verdes: [SKNode?] = []
     var inimigos = 0
+    var incremento = 1
+
     weak var viewController: GameViewController!
     
     override func didMove(to view: SKView) {
@@ -51,11 +53,12 @@ class GameScene: SKScene {
     
     
     func touchDown(atPoint pos : CGPoint) {
+        
         let generator = UINotificationFeedbackGenerator()
         let medGen = UIImpactFeedbackGenerator(style: .medium)
         let lightGen = UIImpactFeedbackGenerator(style: .light)
         let heavyGen = UIImpactFeedbackGenerator(style: .heavy)
-
+        
         let node = atPoint(pos)
         if node.name == "red" {
             generator.notificationOccurred(.success)
@@ -72,9 +75,9 @@ class GameScene: SKScene {
             Model.instance.toquesFase[Model.instance.faseSelecionada] += 1
             
         } else if node.name == "green" || node.name == "orange" || node.name == "bloco"{
-//            generator.notificationOccurred(.warning)
+            //            generator.notificationOccurred(.warning)
             heavyGen.impactOccurred()
-
+            
         }
         
     }
@@ -85,22 +88,31 @@ class GameScene: SKScene {
         
         var res = false
         
-        if (abs(jog.physicsBody!.velocity.dx) < 0.001 && abs(jog.physicsBody!.velocity.dy) < 0.001) && jog.physicsBody!.angularVelocity < 0.001{
+        if (abs(jog.physicsBody!.velocity.dx) < 0.0001 && abs(jog.physicsBody!.velocity.dy) < 0.0001) && jog.physicsBody!.angularVelocity < 0.0001{
             res = true
-            
+        }else{
+            res = false
         }
         return res
     }
     
+    
     func verificaGreens() -> Bool{
-        var res = true
-        
-        for green in verdes{
-            if !verificaVerde(jog: green!){
-                res = false
-            }
+        if inimigos == 0{
+            var resVerde = true
+            var total = verdes.count
+                   
+                   for green in verdes{
+                       if !verificaVerde(jog: green!){
+                           resVerde = false
+                        total -= 1
+                       }
+                   }
+            return resVerde
+            
+        }else{
+            return false
         }
-        return res
         
     }
     func verificaVermelhos(){
@@ -130,30 +142,32 @@ class GameScene: SKScene {
     
     
     override func update(_ currentTime: TimeInterval) {
-        
-        let resultadoVerde = verificaGreens()
         let verdeTela = verdesNaTela()
-        var incremento = 0
         verificaVermelhos()
-        
-        if incremento % 10 == 0{
-            incremento = 0
+//        print(incremento)
+        if incremento % 31 == 0{
+            incremento = 1
+            print("testou")
             
-            if resultadoVerde && inimigos == 0{
-                
-                Model.instance.ganhouFase = true
-                Model.instance.fases[Model.instance.faseSelecionada] = true
-                Model.instance.fasesPossiveis[Model.instance.faseSelecionada + 1] = true
-                UserDefaults.standard.set(Model.instance.fasesPossiveis, forKey: "fasesPossiveis")
-                UserDefaults.standard.set(Model.instance.fases, forKey: "fases")
-                
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
-                    self.isPaused = true
-                    self.viewController.gameOverWon()
+            if inimigos == 0 {
+                let resultadoVerde = verificaGreens()
+
+                if resultadoVerde {
                     
-                })
-                
+                    Model.instance.ganhouFase = true
+                    Model.instance.fases[Model.instance.faseSelecionada] = true
+                    Model.instance.fasesPossiveis[Model.instance.faseSelecionada + 1] = true
+                    UserDefaults.standard.set(Model.instance.fasesPossiveis, forKey: "fasesPossiveis")
+                    UserDefaults.standard.set(Model.instance.fases, forKey: "fases")
+                    
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
+                        self.isPaused = true
+                        self.viewController.gameOverWon()
+                        
+                    })
+                    
+                }
             }
             
             if !verdeTela{

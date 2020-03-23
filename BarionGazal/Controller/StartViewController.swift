@@ -65,7 +65,7 @@ class StartViewController: UIViewController {
         
         if defaults.object(forKey: "toques") == nil {
             let max = Model.instance.numeroFasesTotal
-            for i in 0...max{
+            for _ in 0...max{
                 Model.instance.toquesFase.append(0)
             }
             defaults.set(Model.instance.toquesFase, forKey: "toques")

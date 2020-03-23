@@ -43,6 +43,7 @@ class GameViewController: UIViewController {
     var adsPlayed = 0
     var interAd: GADInterstitial!
     var gamesPlayed: Int = 0
+    var nJogosPProp = 10
     @IBOutlet weak var botaoHome: UIButton!
     @IBOutlet weak var botaoReset: UIButton!
     @IBAction func resetScene(_ sender: Any) {
@@ -88,7 +89,7 @@ class GameViewController: UIViewController {
     func carregaCena(){
         //carrega um ad
         
-        if gamesPlayed == 5{
+        if gamesPlayed == nJogosPProp{
             gamesPlayed = 0
             presentInterAd()
             adsPlayed += 1
