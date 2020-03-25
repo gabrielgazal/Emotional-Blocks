@@ -212,7 +212,7 @@
                                     <constraint firstAttribute="width" secondItem="yvm-BF-mkd" secondAttribute="height" multiplier="1:1" id="og0-bK-UeZ"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" backgroundImage="HomeButton"/>
+                                <state key="normal" backgroundImage="backMenu"/>
                                 <connections>
                                     <action selector="goHome:" destination="BV1-FR-VrT" eventType="touchUpInside" id="8vh-6x-k19"/>
                                 </connections>
@@ -274,7 +274,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCs-u9-Tze" customClass="CircledButton" customModule="Emotional_Blocks" customModuleProvider="target">
-                                                    <rect key="frame" x="110.5" y="121.5" width="70" height="70"/>
+                                                    <rect key="frame" x="124.5" y="128.5" width="56" height="56"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="nCs-u9-Tze" secondAttribute="height" multiplier="1:1" id="mXw-g0-znA"/>
@@ -312,7 +312,7 @@
                                                 <constraint firstItem="nCs-u9-Tze" firstAttribute="centerY" secondItem="7fv-Sn-xoD" secondAttribute="centerY" id="3ly-Xh-2IK"/>
                                                 <constraint firstItem="kol-Nh-NAn" firstAttribute="height" secondItem="txm-ox-it2" secondAttribute="height" multiplier="0.965" id="4pa-ou-cVz"/>
                                                 <constraint firstAttribute="trailing" secondItem="hVE-vh-NZd" secondAttribute="trailing" id="6aN-8w-qum"/>
-                                                <constraint firstItem="nCs-u9-Tze" firstAttribute="width" secondItem="7fv-Sn-xoD" secondAttribute="width" id="DgS-Ny-CDY"/>
+                                                <constraint firstItem="nCs-u9-Tze" firstAttribute="width" secondItem="7fv-Sn-xoD" secondAttribute="width" multiplier="0.8" id="DgS-Ny-CDY"/>
                                                 <constraint firstItem="kol-Nh-NAn" firstAttribute="leading" secondItem="txm-ox-it2" secondAttribute="leading" id="UFG-Pg-SFM"/>
                                                 <constraint firstItem="hVE-vh-NZd" firstAttribute="height" secondItem="txm-ox-it2" secondAttribute="height" multiplier="0.965" id="VtU-xi-CA9"/>
                                                 <constraint firstAttribute="width" secondItem="txm-ox-it2" secondAttribute="height" multiplier="15:10" id="ffE-nM-KTH"/>
