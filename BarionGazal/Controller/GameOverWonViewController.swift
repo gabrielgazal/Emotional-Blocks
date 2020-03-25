@@ -14,6 +14,8 @@ class GameOverWonViewController: UIViewController {
     @IBOutlet weak var MainLabel: UILabel!
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var nextResetButton: UIButton!
+    @IBOutlet weak var SECONDLABEL: UILabel!
+    @IBOutlet weak var bttProp: NSLayoutConstraint!
     
     @IBOutlet weak var menu: NSLayoutConstraint!
     @IBAction func backMenu(_ sender: Any) {
@@ -56,9 +58,14 @@ class GameOverWonViewController: UIViewController {
                 nextResetButton.setBackgroundImage(UIImage(named: "NextArrowButton"), for: .normal)
             }else{
                 MainLabel.text = "END OF THE GAME"
+                SECONDLABEL.text = "   for now..."
                 menuButton.setBackgroundImage(UIImage(named: "backMenu"), for: .normal)
+                bttProp.multiplier.isEqual(to: 1.2)
                 nextResetButton.isHidden = true
+                SECONDLABEL.isHidden = false
                 MainLabel.textColor = #colorLiteral(red: 0.6085866094, green: 0.7251073122, blue: 1, alpha: 1)
+                SECONDLABEL.textColor = #colorLiteral(red: 0.6085866094, green: 0.7251073122, blue: 1, alpha: 1)
+
 
                 
                 menu.constant = 35

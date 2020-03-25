@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcm-yB-6wl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917.41071428571422" y="85.507246376811594"/>
+            <point key="canvasLocation" x="917" y="86"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -266,7 +266,18 @@
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVE-vh-NZd" customClass="EditableView" customModule="Emotional_Blocks" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="0.0" width="381" height="251"/>
+                                                    <subviews>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pco-ON-Zoa">
+                                                            <rect key="frame" x="29.5" y="192.5" width="312" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="BudokanRounded-Bold" family="Budokan Rounded" pointSize="35"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" red="0.97637730840000003" green="0.96078687910000005" blue="0.96079260109999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Pco-ON-Zoa" secondAttribute="bottom" constant="15" id="SzT-xP-cYi"/>
+                                                    </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="15"/>
@@ -274,7 +285,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCs-u9-Tze" customClass="CircledButton" customModule="Emotional_Blocks" customModuleProvider="target">
-                                                    <rect key="frame" x="124.5" y="128.5" width="56" height="56"/>
+                                                    <rect key="frame" x="124.5" y="123.5" width="56" height="56"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="nCs-u9-Tze" secondAttribute="height" multiplier="1:1" id="mXw-g0-znA"/>
@@ -290,7 +301,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fv-Sn-xoD" customClass="CircledButton" customModule="Emotional_Blocks" customModuleProvider="target">
-                                                    <rect key="frame" x="210.5" y="121.5" width="70" height="70"/>
+                                                    <rect key="frame" x="210.5" y="116.5" width="70" height="70"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="7fv-Sn-xoD" secondAttribute="height" multiplier="1:1" id="45p-bg-SLT"/>
@@ -328,7 +339,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adY-cj-KYF">
-                                            <rect key="frame" x="292" y="137" width="312" height="56"/>
+                                            <rect key="frame" x="292" y="132" width="312" height="56"/>
                                             <fontDescription key="fontDescription" name="BudokanRounded-Bold" family="Budokan Rounded" pointSize="45"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -337,13 +348,15 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="txm-ox-it2" firstAttribute="centerY" secondItem="K62-2v-hja" secondAttribute="centerY" id="2hW-dZ-oQW"/>
+                                        <constraint firstItem="Pco-ON-Zoa" firstAttribute="centerX" secondItem="adY-cj-KYF" secondAttribute="centerX" id="3Le-S5-dvV"/>
                                         <constraint firstItem="txm-ox-it2" firstAttribute="height" secondItem="K62-2v-hja" secondAttribute="height" multiplier="0.6" id="ErT-05-bdH"/>
                                         <constraint firstItem="7fv-Sn-xoD" firstAttribute="top" secondItem="adY-cj-KYF" secondAttribute="bottom" constant="15.5" id="ExX-Zo-Odh"/>
-                                        <constraint firstItem="adY-cj-KYF" firstAttribute="top" secondItem="txm-ox-it2" secondAttribute="top" constant="50" id="bGK-y9-6h4"/>
+                                        <constraint firstItem="adY-cj-KYF" firstAttribute="top" secondItem="txm-ox-it2" secondAttribute="top" constant="45" id="bGK-y9-6h4"/>
                                         <constraint firstItem="adY-cj-KYF" firstAttribute="centerX" secondItem="txm-ox-it2" secondAttribute="centerX" id="dQC-WR-glU"/>
                                         <constraint firstItem="7fv-Sn-xoD" firstAttribute="leading" secondItem="adY-cj-KYF" secondAttribute="centerX" constant="15" id="dVK-r9-IwU"/>
                                         <constraint firstItem="nCs-u9-Tze" firstAttribute="trailing" secondItem="adY-cj-KYF" secondAttribute="centerX" constant="-15" id="m0h-Gf-l6X"/>
                                         <constraint firstItem="txm-ox-it2" firstAttribute="centerX" secondItem="K62-2v-hja" secondAttribute="centerX" id="mOf-WY-wkp"/>
+                                        <constraint firstItem="Pco-ON-Zoa" firstAttribute="width" secondItem="adY-cj-KYF" secondAttribute="width" id="niJ-Ev-rBW"/>
                                         <constraint firstItem="adY-cj-KYF" firstAttribute="width" secondItem="txm-ox-it2" secondAttribute="width" multiplier="0.8" id="yrw-jn-dJm"/>
                                     </constraints>
                                 </view>
@@ -363,6 +376,8 @@
                     <navigationItem key="navigationItem" id="61K-An-PnJ"/>
                     <connections>
                         <outlet property="MainLabel" destination="adY-cj-KYF" id="tuy-eP-Tx4"/>
+                        <outlet property="SECONDLABEL" destination="Pco-ON-Zoa" id="g13-FC-mdC"/>
+                        <outlet property="bttProp" destination="DgS-Ny-CDY" id="7zA-3t-Ebf"/>
                         <outlet property="colorView" destination="hVE-vh-NZd" id="w5i-97-MPO"/>
                         <outlet property="menu" destination="m0h-Gf-l6X" id="b2X-3n-4Ms"/>
                         <outlet property="menuButton" destination="nCs-u9-Tze" id="2ij-Uq-0xd"/>
@@ -449,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gkx-Cd-xqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="-886"/>
+            <point key="canvasLocation" x="917" y="-783"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="wp1-4J-PnF">
@@ -470,7 +485,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrn-UC-oNY" customClass="CircledButton" customModule="Emotional_Blocks" customModuleProvider="target">
-                                        <rect key="frame" x="348" y="320.5" width="200" height="70"/>
+                                        <rect key="frame" x="348" y="305.5" width="200" height="70"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="kq0-OU-iox"/>
@@ -533,7 +548,7 @@
                                     <constraint firstItem="NbA-TL-aH2" firstAttribute="top" secondItem="GvU-qH-LOA" secondAttribute="bottom" constant="20" id="0dY-Cy-f3a"/>
                                     <constraint firstItem="P4g-fl-Yhy" firstAttribute="centerX" secondItem="eKQ-hq-9oC" secondAttribute="centerX" id="0kJ-1V-G4X"/>
                                     <constraint firstItem="GvU-qH-LOA" firstAttribute="top" secondItem="eKQ-hq-9oC" secondAttribute="top" constant="55" id="1uN-XI-yN5"/>
-                                    <constraint firstAttribute="bottom" secondItem="qrn-UC-oNY" secondAttribute="bottom" constant="65" id="5D3-0A-epG"/>
+                                    <constraint firstAttribute="bottom" secondItem="qrn-UC-oNY" secondAttribute="bottom" constant="80" id="5D3-0A-epG"/>
                                     <constraint firstAttribute="trailing" secondItem="GvU-qH-LOA" secondAttribute="trailing" constant="55" id="66R-Fs-IIu"/>
                                     <constraint firstItem="Tnr-rd-qUV" firstAttribute="width" secondItem="eKQ-hq-9oC" secondAttribute="width" id="9Ya-S1-cwj"/>
                                     <constraint firstItem="P4g-fl-Yhy" firstAttribute="width" secondItem="eKQ-hq-9oC" secondAttribute="width" id="Dyl-1R-dnl"/>
