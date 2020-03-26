@@ -124,7 +124,6 @@ class GameViewController: UIViewController {
             
             view.showsFPS = false
             view.showsNodeCount = false
-            
         }
     }
     
