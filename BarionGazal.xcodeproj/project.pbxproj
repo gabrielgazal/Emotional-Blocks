@@ -34,7 +34,11 @@
 		56090372242C4C2F0028CA3F /* Level4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090358242C4C2F0028CA3F /* Level4.sks */; };
 		56090373242C4C2F0028CA3F /* Level14.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090359242C4C2F0028CA3F /* Level14.sks */; };
 		56090374242C4C2F0028CA3F /* Level17.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5609035A242C4C2F0028CA3F /* Level17.sks */; };
-		56090375242C4C2F0028CA3F /* Level24.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5609035B242C4C2F0028CA3F /* Level24.sks */; };
+		5620958C242D3143004B6405 /* Level30.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56209587242D3142004B6405 /* Level30.sks */; };
+		5620958D242D3143004B6405 /* Level27.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56209588242D3142004B6405 /* Level27.sks */; };
+		5620958E242D3143004B6405 /* Level28.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56209589242D3143004B6405 /* Level28.sks */; };
+		5620958F242D3143004B6405 /* Level29.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5620958A242D3143004B6405 /* Level29.sks */; };
+		56209590242D3143004B6405 /* Level24.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5620958B242D3143004B6405 /* Level24.sks */; };
 		563343B5241C278C009F504D /* cenaprincipal.json in Resources */ = {isa = PBXBuildFile; fileRef = 563343B4241C278C009F504D /* cenaprincipal.json */; };
 		56762A1924102F5D00952ECE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56762A1824102F5D00952ECE /* MenuViewController.swift */; };
 		56762A1B24102FD900952ECE /* FaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56762A1A24102FD900952ECE /* FaseCollectionViewCell.swift */; };
@@ -111,7 +115,11 @@
 		56090358242C4C2F0028CA3F /* Level4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level4.sks; path = "Versão 1/Level4.sks"; sourceTree = "<group>"; };
 		56090359242C4C2F0028CA3F /* Level14.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level14.sks; path = "Versão 1/Level14.sks"; sourceTree = "<group>"; };
 		5609035A242C4C2F0028CA3F /* Level17.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level17.sks; path = "Versão 1/Level17.sks"; sourceTree = "<group>"; };
-		5609035B242C4C2F0028CA3F /* Level24.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level24.sks; path = "Versão 1/Level24.sks"; sourceTree = "<group>"; };
+		56209587242D3142004B6405 /* Level30.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level30.sks; path = "Versão 1/Level30.sks"; sourceTree = "<group>"; };
+		56209588242D3142004B6405 /* Level27.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level27.sks; path = "Versão 1/Level27.sks"; sourceTree = "<group>"; };
+		56209589242D3143004B6405 /* Level28.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level28.sks; path = "Versão 1/Level28.sks"; sourceTree = "<group>"; };
+		5620958A242D3143004B6405 /* Level29.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level29.sks; path = "Versão 1/Level29.sks"; sourceTree = "<group>"; };
+		5620958B242D3143004B6405 /* Level24.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level24.sks; path = "Versão 1/Level24.sks"; sourceTree = "<group>"; };
 		563343B4241C278C009F504D /* cenaprincipal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cenaprincipal.json; path = ../../../../../../../../Downloads/cenaprincipal.json; sourceTree = "<group>"; };
 		56762A1824102F5D00952ECE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		56762A1A24102FD900952ECE /* FaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -282,9 +290,13 @@
 				5609034C242C4C2E0028CA3F /* Level21.sks */,
 				5609034E242C4C2E0028CA3F /* Level22.sks */,
 				56090347242C4C2E0028CA3F /* Level23.sks */,
-				5609035B242C4C2F0028CA3F /* Level24.sks */,
+				5620958B242D3143004B6405 /* Level24.sks */,
 				56090350242C4C2E0028CA3F /* Level25.sks */,
 				56090343242C4C2E0028CA3F /* Level26.sks */,
+				56209588242D3142004B6405 /* Level27.sks */,
+				56209589242D3143004B6405 /* Level28.sks */,
+				5620958A242D3143004B6405 /* Level29.sks */,
+				56209587242D3142004B6405 /* Level30.sks */,
 				568FB06B240EDCE60051C89B /* GameScene.swift */,
 			);
 			path = Fases;
@@ -465,6 +477,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56209590242D3143004B6405 /* Level24.sks in Resources */,
+				5620958C242D3143004B6405 /* Level30.sks in Resources */,
 				56090373242C4C2F0028CA3F /* Level14.sks in Resources */,
 				56090365242C4C2F0028CA3F /* Level7.sks in Resources */,
 				56090366242C4C2F0028CA3F /* Level21.sks in Resources */,
@@ -483,17 +497,19 @@
 				563343B5241C278C009F504D /* cenaprincipal.json in Resources */,
 				56787A7A24252DCF006EEEED /* pop.mp3 in Resources */,
 				56090362242C4C2F0028CA3F /* Level16.sks in Resources */,
-				56090375242C4C2F0028CA3F /* Level24.sks in Resources */,
 				56090369242C4C2F0028CA3F /* Level15.sks in Resources */,
 				56090361242C4C2F0028CA3F /* Level23.sks in Resources */,
 				5609035F242C4C2F0028CA3F /* Level20.sks in Resources */,
+				5620958E242D3143004B6405 /* Level28.sks in Resources */,
 				5609036E242C4C2F0028CA3F /* Level2.sks in Resources */,
 				56E6F975241AA08000F5B93E /* click.mp3 in Resources */,
 				56090372242C4C2F0028CA3F /* Level4.sks in Resources */,
 				5609036F242C4C2F0028CA3F /* Level3.sks in Resources */,
 				5609036B242C4C2F0028CA3F /* Level6.sks in Resources */,
+				5620958D242D3143004B6405 /* Level27.sks in Resources */,
 				56A40944242145A900D8B0C1 /* GoogleService-Info.plist in Resources */,
 				56090370242C4C2F0028CA3F /* Level9.sks in Resources */,
+				5620958F242D3143004B6405 /* Level29.sks in Resources */,
 				56090368242C4C2F0028CA3F /* Level22.sks in Resources */,
 				5609036C242C4C2F0028CA3F /* Level13.sks in Resources */,
 				56090367242C4C2F0028CA3F /* Level19.sks in Resources */,
@@ -816,15 +832,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 7994PXZY59;
 				INFOPLIST_FILE = BarionGazal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.emotionalBlocks;
 				PRODUCT_NAME = "Emotional Blocks";
 				SWIFT_VERSION = 5.0;
@@ -838,15 +854,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 7994PXZY59;
 				INFOPLIST_FILE = BarionGazal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.emotionalBlocks;
 				PRODUCT_NAME = "Emotional Blocks";
 				SWIFT_VERSION = 5.0;

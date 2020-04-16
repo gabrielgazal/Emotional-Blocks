@@ -23,7 +23,8 @@ extension GameViewController: GADInterstitialDelegate{
     func loadInterAd(){
         let id = "ca-app-pub-6036434756897883/9940097604"
         let testId = "ca-app-pub-3940256099942544/4411468910"
-        let ad = GADInterstitial(adUnitID: testId)
+        let idDoBem = "ca-app-pub-6710438178084678/1038225983"
+        let ad = GADInterstitial(adUnitID: idDoBem)
         ad.delegate = self
         ad.load(GADRequest())
         self.interAd = ad
@@ -43,7 +44,7 @@ class GameViewController: UIViewController {
     var adsPlayed = 0
     var interAd: GADInterstitial!
     var gamesPlayed: Int = 0
-    var nJogosPProp = 10
+    var nJogosPProp = 7
     @IBOutlet weak var botaoHome: UIButton!
     @IBOutlet weak var botaoReset: UIButton!
     @IBAction func resetScene(_ sender: Any) {
@@ -109,12 +110,12 @@ class GameViewController: UIViewController {
             // Load the SKScene from 'GameScene.sks'
             let scene = SKScene(fileNamed: "Level\(Model.instance.faseSelecionada + 1)") as! GameScene
             // Set the scale mode to scale to fit the window
-            scene.scaleMode = .resizeFill
+            scene.scaleMode = .aspectFill
             scene.viewController = self
             // Present the scene
-            scene.size = self.view.bounds.size
+//            scene.size = self.view.bounds.size
             scene.name = "Level\(Model.instance.faseSelecionada + 1)"
-            
+          
             
             
             view.presentScene(scene)

@@ -28,12 +28,17 @@ class GameScene: SKScene {
                 
             } else if node.name == "red" || node.name == "orange" {
                 inimigos += 1
+            }else if node.name == "moldura"{
+                node.isHidden = true
+                
             }
             
         }
         
         let fundo = SKSpriteNode(imageNamed: "background")
+        fundo.setScale(1.5)
         fundo.zPosition = -10
+
         scene?.addChild(fundo)
         
         
