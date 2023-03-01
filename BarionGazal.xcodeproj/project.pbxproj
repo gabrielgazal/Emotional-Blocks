@@ -3,12 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2B10CB54990DE9204CE8D7 /* Pods_BarionGazal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2292E050BA965A2BCE52AF87 /* Pods_BarionGazal.framework */; };
+		4CD529E1ADFB0ECE8E3EC7D1 /* Pods_BarionGazal_BarionGazalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A55DD2ABDBFD431DD12EADA /* Pods_BarionGazal_BarionGazalUITests.framework */; };
+		5609035C242C4C2F0028CA3F /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090342242C4C2E0028CA3F /* Level1.sks */; };
+		5609035D242C4C2F0028CA3F /* Level26.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090343242C4C2E0028CA3F /* Level26.sks */; };
+		5609035E242C4C2F0028CA3F /* Level5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090344242C4C2E0028CA3F /* Level5.sks */; };
+		5609035F242C4C2F0028CA3F /* Level20.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090345242C4C2E0028CA3F /* Level20.sks */; };
+		56090360242C4C2F0028CA3F /* Level18.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090346242C4C2E0028CA3F /* Level18.sks */; };
+		56090361242C4C2F0028CA3F /* Level23.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090347242C4C2E0028CA3F /* Level23.sks */; };
+		56090362242C4C2F0028CA3F /* Level16.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090348242C4C2E0028CA3F /* Level16.sks */; };
+		56090363242C4C2F0028CA3F /* Level10.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090349242C4C2E0028CA3F /* Level10.sks */; };
+		56090364242C4C2F0028CA3F /* Level8.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5609034A242C4C2E0028CA3F /* Level8.sks */; };
+		56090365242C4C2F0028CA3F /* Level7.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5609034B242C4C2E0028CA3F /* Level7.sks */; };
+		56090366242C4C2F0028CA3F /* Level21.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5609034C242C4C2E0028CA3F /* Level21.sks */; };
+		56090367242C4C2F0028CA3F /* Level19.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5609034D242C4C2E0028CA3F /* Level19.sks */; };
+		56090368242C4C2F0028CA3F /* Level22.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5609034E242C4C2E0028CA3F /* Level22.sks */; };
+		56090369242C4C2F0028CA3F /* Level15.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5609034F242C4C2E0028CA3F /* Level15.sks */; };
+		5609036A242C4C2F0028CA3F /* Level25.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090350242C4C2E0028CA3F /* Level25.sks */; };
+		5609036B242C4C2F0028CA3F /* Level6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090351242C4C2E0028CA3F /* Level6.sks */; };
+		5609036C242C4C2F0028CA3F /* Level13.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090352242C4C2E0028CA3F /* Level13.sks */; };
+		5609036D242C4C2F0028CA3F /* Level11.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090353242C4C2E0028CA3F /* Level11.sks */; };
+		5609036E242C4C2F0028CA3F /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090354242C4C2F0028CA3F /* Level2.sks */; };
+		5609036F242C4C2F0028CA3F /* Level3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090355242C4C2F0028CA3F /* Level3.sks */; };
+		56090370242C4C2F0028CA3F /* Level9.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090356242C4C2F0028CA3F /* Level9.sks */; };
+		56090371242C4C2F0028CA3F /* Level12.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090357242C4C2F0028CA3F /* Level12.sks */; };
+		56090372242C4C2F0028CA3F /* Level4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090358242C4C2F0028CA3F /* Level4.sks */; };
+		56090373242C4C2F0028CA3F /* Level14.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56090359242C4C2F0028CA3F /* Level14.sks */; };
+		56090374242C4C2F0028CA3F /* Level17.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5609035A242C4C2F0028CA3F /* Level17.sks */; };
+		5620958C242D3143004B6405 /* Level30.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56209587242D3142004B6405 /* Level30.sks */; };
+		5620958D242D3143004B6405 /* Level27.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56209588242D3142004B6405 /* Level27.sks */; };
+		5620958E242D3143004B6405 /* Level28.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56209589242D3143004B6405 /* Level28.sks */; };
+		5620958F242D3143004B6405 /* Level29.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5620958A242D3143004B6405 /* Level29.sks */; };
+		56209590242D3143004B6405 /* Level24.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5620958B242D3143004B6405 /* Level24.sks */; };
+		563343B5241C278C009F504D /* cenaprincipal.json in Resources */ = {isa = PBXBuildFile; fileRef = 563343B4241C278C009F504D /* cenaprincipal.json */; };
+		56762A1924102F5D00952ECE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56762A1824102F5D00952ECE /* MenuViewController.swift */; };
+		56762A1B24102FD900952ECE /* FaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56762A1A24102FD900952ECE /* FaseCollectionViewCell.swift */; };
+		56762A1E24104E7400952ECE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56762A1D24104E7400952ECE /* Model.swift */; };
+		56787A7A24252DCF006EEEED /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56787A7924252DCF006EEEED /* pop.mp3 */; };
 		568FB066240EDCE60051C89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568FB065240EDCE60051C89B /* AppDelegate.swift */; };
-		568FB068240EDCE60051C89B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 568FB067240EDCE60051C89B /* GameScene.sks */; };
 		568FB06A240EDCE60051C89B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 568FB069240EDCE60051C89B /* Actions.sks */; };
 		568FB06C240EDCE60051C89B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568FB06B240EDCE60051C89B /* GameScene.swift */; };
 		568FB06E240EDCE60051C89B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568FB06D240EDCE60051C89B /* GameViewController.swift */; };
@@ -17,6 +53,19 @@
 		568FB076240EDCEB0051C89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568FB074240EDCEB0051C89B /* LaunchScreen.storyboard */; };
 		568FB081240EDCEB0051C89B /* BarionGazalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568FB080240EDCEB0051C89B /* BarionGazalTests.swift */; };
 		568FB08C240EDCEB0051C89B /* BarionGazalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568FB08B240EDCEB0051C89B /* BarionGazalUITests.swift */; };
+		56A40944242145A900D8B0C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A40943242145A900D8B0C1 /* GoogleService-Info.plist */; };
+		56E6F9652419DAC000F5B93E /* CircledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F9642419DAC000F5B93E /* CircledButton.swift */; };
+		56E6F9672419DB9800F5B93E /* BudokanRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */; };
+		56E6F9692419DFED00F5B93E /* EditableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F9682419DFED00F5B93E /* EditableView.swift */; };
+		56E6F96E241A9F5500F5B93E /* AudioLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F96A241A9F5400F5B93E /* AudioLibrary.swift */; };
+		56E6F96F241A9F5500F5B93E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F96B241A9F5500F5B93E /* AudioManager.swift */; };
+		56E6F970241A9F5500F5B93E /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F96C241A9F5500F5B93E /* Song.swift */; };
+		56E6F971241A9F5500F5B93E /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F96D241A9F5500F5B93E /* SoundEffects.swift */; };
+		56E6F975241AA08000F5B93E /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56E6F974241AA08000F5B93E /* click.mp3 */; };
+		56E6F977241AA14B00F5B93E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F976241AA14B00F5B93E /* StartViewController.swift */; };
+		56E6F979241AAD6E00F5B93E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F978241AAD6E00F5B93E /* SettingsViewController.swift */; };
+		56E6F97B241AB60F00F5B93E /* GameOverWonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6F97A241AB60F00F5B93E /* GameOverWonViewController.swift */; };
+		86031C62D5C35BB1F7E2AFF5 /* Pods_BarionGazalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F250C6181942B857F65467 /* Pods_BarionGazalTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +86,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		568FB062240EDCE60051C89B /* BarionGazal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarionGazal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2292E050BA965A2BCE52AF87 /* Pods_BarionGazal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarionGazal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24355588AB7E67DABE85E2C1 /* Pods-BarionGazal-BarionGazalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazal-BarionGazalUITests.debug.xcconfig"; path = "Target Support Files/Pods-BarionGazal-BarionGazalUITests/Pods-BarionGazal-BarionGazalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F9B36BA23E717B7C1C0F32E /* Pods-BarionGazalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazalTests.debug.xcconfig"; path = "Target Support Files/Pods-BarionGazalTests/Pods-BarionGazalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A55DD2ABDBFD431DD12EADA /* Pods_BarionGazal_BarionGazalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarionGazal_BarionGazalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56090342242C4C2E0028CA3F /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level1.sks; path = "Versão 1/Level1.sks"; sourceTree = "<group>"; };
+		56090343242C4C2E0028CA3F /* Level26.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level26.sks; path = "Versão 1/Level26.sks"; sourceTree = "<group>"; };
+		56090344242C4C2E0028CA3F /* Level5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level5.sks; path = "Versão 1/Level5.sks"; sourceTree = "<group>"; };
+		56090345242C4C2E0028CA3F /* Level20.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level20.sks; path = "Versão 1/Level20.sks"; sourceTree = "<group>"; };
+		56090346242C4C2E0028CA3F /* Level18.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level18.sks; path = "Versão 1/Level18.sks"; sourceTree = "<group>"; };
+		56090347242C4C2E0028CA3F /* Level23.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level23.sks; path = "Versão 1/Level23.sks"; sourceTree = "<group>"; };
+		56090348242C4C2E0028CA3F /* Level16.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level16.sks; path = "Versão 1/Level16.sks"; sourceTree = "<group>"; };
+		56090349242C4C2E0028CA3F /* Level10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level10.sks; path = "Versão 1/Level10.sks"; sourceTree = "<group>"; };
+		5609034A242C4C2E0028CA3F /* Level8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level8.sks; path = "Versão 1/Level8.sks"; sourceTree = "<group>"; };
+		5609034B242C4C2E0028CA3F /* Level7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level7.sks; path = "Versão 1/Level7.sks"; sourceTree = "<group>"; };
+		5609034C242C4C2E0028CA3F /* Level21.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level21.sks; path = "Versão 1/Level21.sks"; sourceTree = "<group>"; };
+		5609034D242C4C2E0028CA3F /* Level19.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level19.sks; path = "Versão 1/Level19.sks"; sourceTree = "<group>"; };
+		5609034E242C4C2E0028CA3F /* Level22.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level22.sks; path = "Versão 1/Level22.sks"; sourceTree = "<group>"; };
+		5609034F242C4C2E0028CA3F /* Level15.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level15.sks; path = "Versão 1/Level15.sks"; sourceTree = "<group>"; };
+		56090350242C4C2E0028CA3F /* Level25.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level25.sks; path = "Versão 1/Level25.sks"; sourceTree = "<group>"; };
+		56090351242C4C2E0028CA3F /* Level6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level6.sks; path = "Versão 1/Level6.sks"; sourceTree = "<group>"; };
+		56090352242C4C2E0028CA3F /* Level13.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level13.sks; path = "Versão 1/Level13.sks"; sourceTree = "<group>"; };
+		56090353242C4C2E0028CA3F /* Level11.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level11.sks; path = "Versão 1/Level11.sks"; sourceTree = "<group>"; };
+		56090354242C4C2F0028CA3F /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level2.sks; path = "Versão 1/Level2.sks"; sourceTree = "<group>"; };
+		56090355242C4C2F0028CA3F /* Level3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level3.sks; path = "Versão 1/Level3.sks"; sourceTree = "<group>"; };
+		56090356242C4C2F0028CA3F /* Level9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level9.sks; path = "Versão 1/Level9.sks"; sourceTree = "<group>"; };
+		56090357242C4C2F0028CA3F /* Level12.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level12.sks; path = "Versão 1/Level12.sks"; sourceTree = "<group>"; };
+		56090358242C4C2F0028CA3F /* Level4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level4.sks; path = "Versão 1/Level4.sks"; sourceTree = "<group>"; };
+		56090359242C4C2F0028CA3F /* Level14.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level14.sks; path = "Versão 1/Level14.sks"; sourceTree = "<group>"; };
+		5609035A242C4C2F0028CA3F /* Level17.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level17.sks; path = "Versão 1/Level17.sks"; sourceTree = "<group>"; };
+		56209587242D3142004B6405 /* Level30.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level30.sks; path = "Versão 1/Level30.sks"; sourceTree = "<group>"; };
+		56209588242D3142004B6405 /* Level27.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level27.sks; path = "Versão 1/Level27.sks"; sourceTree = "<group>"; };
+		56209589242D3143004B6405 /* Level28.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level28.sks; path = "Versão 1/Level28.sks"; sourceTree = "<group>"; };
+		5620958A242D3143004B6405 /* Level29.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level29.sks; path = "Versão 1/Level29.sks"; sourceTree = "<group>"; };
+		5620958B242D3143004B6405 /* Level24.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level24.sks; path = "Versão 1/Level24.sks"; sourceTree = "<group>"; };
+		563343B4241C278C009F504D /* cenaprincipal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cenaprincipal.json; path = ../../../../../../../../Downloads/cenaprincipal.json; sourceTree = "<group>"; };
+		56762A1824102F5D00952ECE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		56762A1A24102FD900952ECE /* FaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		56762A1D24104E7400952ECE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		56787A7924252DCF006EEEED /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		568FB062240EDCE60051C89B /* Emotional Blocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emotional Blocks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		568FB065240EDCE60051C89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		568FB067240EDCE60051C89B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		568FB069240EDCE60051C89B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		568FB06B240EDCE60051C89B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		568FB06D240EDCE60051C89B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +140,23 @@
 		568FB087240EDCEB0051C89B /* BarionGazalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarionGazalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		568FB08B240EDCEB0051C89B /* BarionGazalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarionGazalUITests.swift; sourceTree = "<group>"; };
 		568FB08D240EDCEB0051C89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A40943242145A900D8B0C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56E6F9642419DAC000F5B93E /* CircledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledButton.swift; sourceTree = "<group>"; };
+		56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BudokanRounded-Bold.ttf"; path = "../../../../../../../Downloads/budokan_rounded/BudokanRounded-Bold.ttf"; sourceTree = "<group>"; };
+		56E6F9682419DFED00F5B93E /* EditableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableView.swift; sourceTree = "<group>"; };
+		56E6F96A241A9F5400F5B93E /* AudioLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioLibrary.swift; sourceTree = "<group>"; };
+		56E6F96B241A9F5500F5B93E /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		56E6F96C241A9F5500F5B93E /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		56E6F96D241A9F5500F5B93E /* SoundEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
+		56E6F974241AA08000F5B93E /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		56E6F976241AA14B00F5B93E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		56E6F978241AAD6E00F5B93E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		56E6F97A241AB60F00F5B93E /* GameOverWonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverWonViewController.swift; sourceTree = "<group>"; };
+		57753C0245A08673621F98B0 /* Pods-BarionGazal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazal.release.xcconfig"; path = "Target Support Files/Pods-BarionGazal/Pods-BarionGazal.release.xcconfig"; sourceTree = "<group>"; };
+		649D83FB7F80D4949B478029 /* Pods-BarionGazal-BarionGazalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazal-BarionGazalUITests.release.xcconfig"; path = "Target Support Files/Pods-BarionGazal-BarionGazalUITests/Pods-BarionGazal-BarionGazalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6663E585FD34D78287E9712E /* Pods-BarionGazalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazalTests.release.xcconfig"; path = "Target Support Files/Pods-BarionGazalTests/Pods-BarionGazalTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D4740330A1F35FE606E2B7A /* Pods-BarionGazal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarionGazal.debug.xcconfig"; path = "Target Support Files/Pods-BarionGazal/Pods-BarionGazal.debug.xcconfig"; sourceTree = "<group>"; };
+		B7F250C6181942B857F65467 /* Pods_BarionGazalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarionGazalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2B10CB54990DE9204CE8D7 /* Pods_BarionGazal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86031C62D5C35BB1F7E2AFF5 /* Pods_BarionGazalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +180,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD529E1ADFB0ECE8E3EC7D1 /* Pods_BarionGazal_BarionGazalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34D47E895A62F14342DD7A3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D4740330A1F35FE606E2B7A /* Pods-BarionGazal.debug.xcconfig */,
+				57753C0245A08673621F98B0 /* Pods-BarionGazal.release.xcconfig */,
+				24355588AB7E67DABE85E2C1 /* Pods-BarionGazal-BarionGazalUITests.debug.xcconfig */,
+				649D83FB7F80D4949B478029 /* Pods-BarionGazal-BarionGazalUITests.release.xcconfig */,
+				2F9B36BA23E717B7C1C0F32E /* Pods-BarionGazalTests.debug.xcconfig */,
+				6663E585FD34D78287E9712E /* Pods-BarionGazalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		56762A1C24104E6800952ECE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56762A1D24104E7400952ECE /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		568FB059240EDCE60051C89B = {
 			isa = PBXGroup;
 			children = (
@@ -87,13 +215,15 @@
 				568FB07F240EDCEB0051C89B /* BarionGazalTests */,
 				568FB08A240EDCEB0051C89B /* BarionGazalUITests */,
 				568FB063240EDCE60051C89B /* Products */,
+				34D47E895A62F14342DD7A3C /* Pods */,
+				D967DA962A6384DFFAEDEEB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		568FB063240EDCE60051C89B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				568FB062240EDCE60051C89B /* BarionGazal.app */,
+				568FB062240EDCE60051C89B /* Emotional Blocks.app */,
 				568FB07C240EDCEB0051C89B /* BarionGazalTests.xctest */,
 				568FB087240EDCEB0051C89B /* BarionGazalUITests.xctest */,
 			);
@@ -103,14 +233,14 @@
 		568FB064240EDCE60051C89B /* BarionGazal */ = {
 			isa = PBXGroup;
 			children = (
-				568FB065240EDCE60051C89B /* AppDelegate.swift */,
-				568FB067240EDCE60051C89B /* GameScene.sks */,
+				56E6F9632419DAA000F5B93E /* Resources */,
+				56762A1C24104E6800952ECE /* Model */,
+				568FB09B241029060051C89B /* Controller */,
+				568FB09A241028F90051C89B /* Fases */,
 				568FB069240EDCE60051C89B /* Actions.sks */,
-				568FB06B240EDCE60051C89B /* GameScene.swift */,
-				568FB06D240EDCE60051C89B /* GameViewController.swift */,
-				568FB06F240EDCE60051C89B /* Main.storyboard */,
+				568FB09C241029150051C89B /* View */,
 				568FB072240EDCEB0051C89B /* Assets.xcassets */,
-				568FB074240EDCEB0051C89B /* LaunchScreen.storyboard */,
+				56A40943242145A900D8B0C1 /* GoogleService-Info.plist */,
 				568FB077240EDCEB0051C89B /* Info.plist */,
 			);
 			path = BarionGazal;
@@ -134,6 +264,110 @@
 			path = BarionGazalUITests;
 			sourceTree = "<group>";
 		};
+		568FB09A241028F90051C89B /* Fases */ = {
+			isa = PBXGroup;
+			children = (
+				56090342242C4C2E0028CA3F /* Level1.sks */,
+				56090354242C4C2F0028CA3F /* Level2.sks */,
+				56090355242C4C2F0028CA3F /* Level3.sks */,
+				56090358242C4C2F0028CA3F /* Level4.sks */,
+				56090344242C4C2E0028CA3F /* Level5.sks */,
+				56090351242C4C2E0028CA3F /* Level6.sks */,
+				5609034B242C4C2E0028CA3F /* Level7.sks */,
+				5609034A242C4C2E0028CA3F /* Level8.sks */,
+				56090356242C4C2F0028CA3F /* Level9.sks */,
+				56090349242C4C2E0028CA3F /* Level10.sks */,
+				56090353242C4C2E0028CA3F /* Level11.sks */,
+				56090357242C4C2F0028CA3F /* Level12.sks */,
+				56090352242C4C2E0028CA3F /* Level13.sks */,
+				56090359242C4C2F0028CA3F /* Level14.sks */,
+				5609034F242C4C2E0028CA3F /* Level15.sks */,
+				56090348242C4C2E0028CA3F /* Level16.sks */,
+				5609035A242C4C2F0028CA3F /* Level17.sks */,
+				56090346242C4C2E0028CA3F /* Level18.sks */,
+				5609034D242C4C2E0028CA3F /* Level19.sks */,
+				56090345242C4C2E0028CA3F /* Level20.sks */,
+				5609034C242C4C2E0028CA3F /* Level21.sks */,
+				5609034E242C4C2E0028CA3F /* Level22.sks */,
+				56090347242C4C2E0028CA3F /* Level23.sks */,
+				5620958B242D3143004B6405 /* Level24.sks */,
+				56090350242C4C2E0028CA3F /* Level25.sks */,
+				56090343242C4C2E0028CA3F /* Level26.sks */,
+				56209588242D3142004B6405 /* Level27.sks */,
+				56209589242D3143004B6405 /* Level28.sks */,
+				5620958A242D3143004B6405 /* Level29.sks */,
+				56209587242D3142004B6405 /* Level30.sks */,
+				568FB06B240EDCE60051C89B /* GameScene.swift */,
+			);
+			path = Fases;
+			sourceTree = "<group>";
+		};
+		568FB09B241029060051C89B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				568FB06D240EDCE60051C89B /* GameViewController.swift */,
+				56762A1824102F5D00952ECE /* MenuViewController.swift */,
+				568FB065240EDCE60051C89B /* AppDelegate.swift */,
+				56E6F97A241AB60F00F5B93E /* GameOverWonViewController.swift */,
+				56762A1A24102FD900952ECE /* FaseCollectionViewCell.swift */,
+				56E6F976241AA14B00F5B93E /* StartViewController.swift */,
+				56E6F978241AAD6E00F5B93E /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		568FB09C241029150051C89B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				568FB06F240EDCE60051C89B /* Main.storyboard */,
+				568FB074240EDCEB0051C89B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56E6F9632419DAA000F5B93E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56E6F982241C223F00F5B93E /* Animations */,
+				56E6F973241A9FF900F5B93E /* Sounds */,
+				56E6F9662419DB7500F5B93E /* BudokanRounded-Bold.ttf */,
+				56E6F9642419DAC000F5B93E /* CircledButton.swift */,
+				56E6F9682419DFED00F5B93E /* EditableView.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		56E6F973241A9FF900F5B93E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				56787A7924252DCF006EEEED /* pop.mp3 */,
+				56E6F974241AA08000F5B93E /* click.mp3 */,
+				56E6F96A241A9F5400F5B93E /* AudioLibrary.swift */,
+				56E6F96B241A9F5500F5B93E /* AudioManager.swift */,
+				56E6F96C241A9F5500F5B93E /* Song.swift */,
+				56E6F96D241A9F5500F5B93E /* SoundEffects.swift */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		56E6F982241C223F00F5B93E /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				563343B4241C278C009F504D /* cenaprincipal.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		D967DA962A6384DFFAEDEEB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2292E050BA965A2BCE52AF87 /* Pods_BarionGazal.framework */,
+				4A55DD2ABDBFD431DD12EADA /* Pods_BarionGazal_BarionGazalUITests.framework */,
+				B7F250C6181942B857F65467 /* Pods_BarionGazalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +375,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 568FB090240EDCEB0051C89B /* Build configuration list for PBXNativeTarget "BarionGazal" */;
 			buildPhases = (
+				3A371D37267FBD7DC352C208 /* [CP] Check Pods Manifest.lock */,
 				568FB05E240EDCE60051C89B /* Sources */,
 				568FB05F240EDCE60051C89B /* Frameworks */,
 				568FB060240EDCE60051C89B /* Resources */,
+				D06D2B1B9CCC7F8BD865FEF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,13 +387,14 @@
 			);
 			name = BarionGazal;
 			productName = BarionGazal;
-			productReference = 568FB062240EDCE60051C89B /* BarionGazal.app */;
+			productReference = 568FB062240EDCE60051C89B /* Emotional Blocks.app */;
 			productType = "com.apple.product-type.application";
 		};
 		568FB07B240EDCEB0051C89B /* BarionGazalTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 568FB093240EDCEB0051C89B /* Build configuration list for PBXNativeTarget "BarionGazalTests" */;
 			buildPhases = (
+				8398CF6C24B4D73340B7A74E /* [CP] Check Pods Manifest.lock */,
 				568FB078240EDCEB0051C89B /* Sources */,
 				568FB079240EDCEB0051C89B /* Frameworks */,
 				568FB07A240EDCEB0051C89B /* Resources */,
@@ -176,9 +413,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 568FB096240EDCEB0051C89B /* Build configuration list for PBXNativeTarget "BarionGazalUITests" */;
 			buildPhases = (
+				BAB8DCD633D3F66FE58EC229 /* [CP] Check Pods Manifest.lock */,
 				568FB083240EDCEB0051C89B /* Sources */,
 				568FB084240EDCEB0051C89B /* Frameworks */,
 				568FB085240EDCEB0051C89B /* Resources */,
+				D9E2053D7F3B1CF002A4E6D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,11 +477,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56209590242D3143004B6405 /* Level24.sks in Resources */,
+				5620958C242D3143004B6405 /* Level30.sks in Resources */,
+				56090373242C4C2F0028CA3F /* Level14.sks in Resources */,
+				56090365242C4C2F0028CA3F /* Level7.sks in Resources */,
+				56090366242C4C2F0028CA3F /* Level21.sks in Resources */,
+				56E6F9672419DB9800F5B93E /* BudokanRounded-Bold.ttf in Resources */,
+				56090364242C4C2F0028CA3F /* Level8.sks in Resources */,
+				56090363242C4C2F0028CA3F /* Level10.sks in Resources */,
+				56090374242C4C2F0028CA3F /* Level17.sks in Resources */,
+				56090360242C4C2F0028CA3F /* Level18.sks in Resources */,
+				5609036D242C4C2F0028CA3F /* Level11.sks in Resources */,
 				568FB071240EDCE60051C89B /* Main.storyboard in Resources */,
-				568FB068240EDCE60051C89B /* GameScene.sks in Resources */,
 				568FB073240EDCEB0051C89B /* Assets.xcassets in Resources */,
 				568FB076240EDCEB0051C89B /* LaunchScreen.storyboard in Resources */,
+				5609036A242C4C2F0028CA3F /* Level25.sks in Resources */,
+				5609035C242C4C2F0028CA3F /* Level1.sks in Resources */,
 				568FB06A240EDCE60051C89B /* Actions.sks in Resources */,
+				563343B5241C278C009F504D /* cenaprincipal.json in Resources */,
+				56787A7A24252DCF006EEEED /* pop.mp3 in Resources */,
+				56090362242C4C2F0028CA3F /* Level16.sks in Resources */,
+				56090369242C4C2F0028CA3F /* Level15.sks in Resources */,
+				56090361242C4C2F0028CA3F /* Level23.sks in Resources */,
+				5609035F242C4C2F0028CA3F /* Level20.sks in Resources */,
+				5620958E242D3143004B6405 /* Level28.sks in Resources */,
+				5609036E242C4C2F0028CA3F /* Level2.sks in Resources */,
+				56E6F975241AA08000F5B93E /* click.mp3 in Resources */,
+				56090372242C4C2F0028CA3F /* Level4.sks in Resources */,
+				5609036F242C4C2F0028CA3F /* Level3.sks in Resources */,
+				5609036B242C4C2F0028CA3F /* Level6.sks in Resources */,
+				5620958D242D3143004B6405 /* Level27.sks in Resources */,
+				56A40944242145A900D8B0C1 /* GoogleService-Info.plist in Resources */,
+				56090370242C4C2F0028CA3F /* Level9.sks in Resources */,
+				5620958F242D3143004B6405 /* Level29.sks in Resources */,
+				56090368242C4C2F0028CA3F /* Level22.sks in Resources */,
+				5609036C242C4C2F0028CA3F /* Level13.sks in Resources */,
+				56090367242C4C2F0028CA3F /* Level19.sks in Resources */,
+				56090371242C4C2F0028CA3F /* Level12.sks in Resources */,
+				5609035E242C4C2F0028CA3F /* Level5.sks in Resources */,
+				5609035D242C4C2F0028CA3F /* Level26.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,14 +535,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A371D37267FBD7DC352C208 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarionGazal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8398CF6C24B4D73340B7A74E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarionGazalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB8DCD633D3F66FE58EC229 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarionGazal-BarionGazalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D06D2B1B9CCC7F8BD865FEF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarionGazal/Pods-BarionGazal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarionGazal/Pods-BarionGazal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarionGazal/Pods-BarionGazal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9E2053D7F3B1CF002A4E6D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarionGazal-BarionGazalUITests/Pods-BarionGazal-BarionGazalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarionGazal-BarionGazalUITests/Pods-BarionGazal-BarionGazalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarionGazal-BarionGazalUITests/Pods-BarionGazal-BarionGazalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		568FB05E240EDCE60051C89B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56762A1B24102FD900952ECE /* FaseCollectionViewCell.swift in Sources */,
 				568FB06C240EDCE60051C89B /* GameScene.swift in Sources */,
+				56E6F971241A9F5500F5B93E /* SoundEffects.swift in Sources */,
+				56E6F9692419DFED00F5B93E /* EditableView.swift in Sources */,
+				56E6F9652419DAC000F5B93E /* CircledButton.swift in Sources */,
 				568FB06E240EDCE60051C89B /* GameViewController.swift in Sources */,
+				56E6F970241A9F5500F5B93E /* Song.swift in Sources */,
+				56762A1E24104E7400952ECE /* Model.swift in Sources */,
+				56E6F977241AA14B00F5B93E /* StartViewController.swift in Sources */,
+				56E6F979241AAD6E00F5B93E /* SettingsViewController.swift in Sources */,
 				568FB066240EDCE60051C89B /* AppDelegate.swift in Sources */,
+				56E6F96E241A9F5500F5B93E /* AudioLibrary.swift in Sources */,
+				56E6F97B241AB60F00F5B93E /* GameOverWonViewController.swift in Sources */,
+				56E6F96F241A9F5500F5B93E /* AudioManager.swift in Sources */,
+				56762A1924102F5D00952ECE /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,42 +828,51 @@
 		};
 		568FB091240EDCEB0051C89B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4740330A1F35FE606E2B7A /* Pods-BarionGazal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 7994PXZY59;
 				INFOPLIST_FILE = BarionGazal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nano4.BarionGazal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emotionalBlocks;
+				PRODUCT_NAME = "Emotional Blocks";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		568FB092240EDCEB0051C89B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57753C0245A08673621F98B0 /* Pods-BarionGazal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 7994PXZY59;
 				INFOPLIST_FILE = BarionGazal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nano4.BarionGazal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emotionalBlocks;
+				PRODUCT_NAME = "Emotional Blocks";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		568FB094240EDCEB0051C89B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F9B36BA23E717B7C1C0F32E /* Pods-BarionGazalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +894,7 @@
 		};
 		568FB095240EDCEB0051C89B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6663E585FD34D78287E9712E /* Pods-BarionGazalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +916,7 @@
 		};
 		568FB097240EDCEB0051C89B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24355588AB7E67DABE85E2C1 /* Pods-BarionGazal-BarionGazalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +936,7 @@
 		};
 		568FB098240EDCEB0051C89B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649D83FB7F80D4949B478029 /* Pods-BarionGazal-BarionGazalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

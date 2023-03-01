@@ -1,0 +1,6 @@
+framework module Pods_BarionGazalTests {
+  umbrella header "Pods-BarionGazalTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

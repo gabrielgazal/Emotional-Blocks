@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-6710438178084678~8461613958</string>
+	<key></key>
+	<string></string>
+	<key>CLIENT_ID</key>
+	<string>38939212884-4onolqc3661ornnbljmadqd496aeic56.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.38939212884-4onolqc3661ornnbljmadqd496aeic56</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCv_GZW7uiy53dM5ySngHM7grbDtfiyIIw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>38939212884</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.emotionalBlocks</string>
+	<key>PROJECT_ID</key>
+	<string>emotional-blocks</string>
+	<key>STORAGE_BUCKET</key>
+	<string>emotional-blocks.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:38939212884:ios:96a79808780f5e1d8b81c1</string>
+	<key>DATABASE_URL</key>
+	<string>https://emotional-blocks.firebaseio.com</string>
+</dict>
+</plist>
